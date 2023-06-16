@@ -15,6 +15,7 @@
  */
 
 import Foundation
+import Cocoa
 
 class InputField: NSTextField {
     override func becomeFirstResponder() -> Bool {

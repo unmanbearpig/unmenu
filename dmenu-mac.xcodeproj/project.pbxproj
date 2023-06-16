@@ -21,22 +21,16 @@
 		7F3278F51C71C9CE00AFB227 /* SearchWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3278ED1C71C9CE00AFB227 /* SearchWindow.swift */; };
 		7F3278F71C71C9CE00AFB227 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3278EF1C71C9CE00AFB227 /* SearchViewController.swift */; };
 		7F3279001C71D39800AFB227 /* VerticalAlignedTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3278FF1C71D39800AFB227 /* VerticalAlignedTextFieldCell.swift */; };
-		7F3279091C71DF2300AFB227 /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3279031C71DF2300AFB227 /* DDHotKeyCenter.m */; };
-		7F32790A1C71DF2300AFB227 /* DDHotKeyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3279051C71DF2300AFB227 /* DDHotKeyTextField.m */; };
-		7F32790B1C71DF2300AFB227 /* DDHotKeyUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3279071C71DF2300AFB227 /* DDHotKeyUtilities.m */; };
-		7F32790E1C71DF3E00AFB227 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F32790D1C71DF3E00AFB227 /* Carbon.framework */; };
 		7F5D0E261CACCD0100268983 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5D0E241CACCD0100268983 /* ResultsView.swift */; };
 		7F5D0E2C1CACCDD400268983 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5D0E281CACCDD400268983 /* Main.storyboard */; };
-		7F6511F529A617F8007D3EB3 /* Preferences in Frameworks */ = {isa = PBXBuildFile; productRef = 7F6511F429A617F8007D3EB3 /* Preferences */; };
-		7F6511F729A619DE007D3EB3 /* GeneralSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6511F629A619DE007D3EB3 /* GeneralSettingsViewController.swift */; };
 		7F6511FB29A61A4E007D3EB3 /* GeneralSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F6511F929A61A4E007D3EB3 /* GeneralSettingsViewController.xib */; };
-		7F6511FE29A61C32007D3EB3 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 7F6511FD29A61C32007D3EB3 /* KeyboardShortcuts */; };
 		7F90D2D226FDE2400003EC7E /* dmenu-mac in Resources */ = {isa = PBXBuildFile; fileRef = 7F90D2D126FDE2400003EC7E /* dmenu-mac */; };
 		7FA29F6C29A55B0B00B27359 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 7FA29F6B29A55B0B00B27359 /* LaunchAtLogin */; };
 		7FDA366E241FDA5E00B51212 /* Fuse in Frameworks */ = {isa = PBXBuildFile; productRef = 7FDA366D241FDA5E00B51212 /* Fuse */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C0B6D162A3C82B3007D65A6 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = src/BridgingHeader.h; sourceTree = "<group>"; };
 		7F25568E269CF945002324AC /* CommandArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommandArguments.swift; path = src/CommandArguments.swift; sourceTree = "<group>"; };
 		7F255693269D01FF002324AC /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputField.swift; path = src/InputField.swift; sourceTree = "<group>"; };
 		7F2CCA22268B195F00C14B29 /* Notification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Notification+Name.swift"; path = "src/Notification+Name.swift"; sourceTree = "<group>"; };
@@ -51,17 +45,8 @@
 		7F3278ED1C71C9CE00AFB227 /* SearchWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchWindow.swift; path = src/SearchWindow.swift; sourceTree = "<group>"; };
 		7F3278EF1C71C9CE00AFB227 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = src/SearchViewController.swift; sourceTree = "<group>"; };
 		7F3278FF1C71D39800AFB227 /* VerticalAlignedTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VerticalAlignedTextFieldCell.swift; path = src/VerticalAlignedTextFieldCell.swift; sourceTree = "<group>"; };
-		7F3279021C71DF2300AFB227 /* DDHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHotKeyCenter.h; path = "src/3rd-party/DDHotKeyCenter.h"; sourceTree = "<group>"; };
-		7F3279031C71DF2300AFB227 /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHotKeyCenter.m; path = "src/3rd-party/DDHotKeyCenter.m"; sourceTree = "<group>"; };
-		7F3279041C71DF2300AFB227 /* DDHotKeyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHotKeyTextField.h; path = "src/3rd-party/DDHotKeyTextField.h"; sourceTree = "<group>"; };
-		7F3279051C71DF2300AFB227 /* DDHotKeyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHotKeyTextField.m; path = "src/3rd-party/DDHotKeyTextField.m"; sourceTree = "<group>"; };
-		7F3279061C71DF2300AFB227 /* DDHotKeyUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDHotKeyUtilities.h; path = "src/3rd-party/DDHotKeyUtilities.h"; sourceTree = "<group>"; };
-		7F3279071C71DF2300AFB227 /* DDHotKeyUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDHotKeyUtilities.m; path = "src/3rd-party/DDHotKeyUtilities.m"; sourceTree = "<group>"; };
-		7F32790D1C71DF3E00AFB227 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
-		7F3279111C71E02300AFB227 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = src/BridgingHeader.h; sourceTree = "<group>"; };
 		7F5D0E241CACCD0100268983 /* ResultsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResultsView.swift; path = src/ResultsView.swift; sourceTree = "<group>"; };
 		7F5D0E291CACCDD400268983 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = src/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7F6511F629A619DE007D3EB3 /* GeneralSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeneralSettingsViewController.swift; path = src/GeneralSettingsViewController.swift; sourceTree = "<group>"; };
 		7F6511FA29A61A4E007D3EB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = src/Base.lproj/GeneralSettingsViewController.xib; sourceTree = "<group>"; };
 		7F7982A5241FF0FD0079AFD2 /* dmenu-mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "dmenu-mac.entitlements"; sourceTree = "<group>"; };
 		7F90D2D126FDE2400003EC7E /* dmenu-mac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "dmenu-mac"; sourceTree = "<group>"; };
@@ -74,9 +59,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F2CCA1E268B10F700C14B29 /* FileWatcher in Frameworks */,
-				7F6511FE29A61C32007D3EB3 /* KeyboardShortcuts in Frameworks */,
-				7F6511F529A617F8007D3EB3 /* Preferences in Frameworks */,
-				7F32790E1C71DF3E00AFB227 /* Carbon.framework in Frameworks */,
 				7F255692269CF988002324AC /* ArgumentParser in Frameworks */,
 				7FA29F6C29A55B0B00B27359 /* LaunchAtLogin in Frameworks */,
 				7FDA366E241FDA5E00B51212 /* Fuse in Frameworks */,
@@ -89,11 +71,9 @@
 		7F3278E71C71C96100AFB227 /* dmenu-mac */ = {
 			isa = PBXGroup;
 			children = (
-				7F3279011C71DF1900AFB227 /* 3rd-party */,
 				7F6511F829A619FD007D3EB3 /* src */,
 				7F3278E91C71C9CE00AFB227 /* Assets.xcassets */,
 				7F3278FA1C71CA0200AFB227 /* Base.lproj */,
-				7F3279111C71E02300AFB227 /* BridgingHeader.h */,
 				7F7982A5241FF0FD0079AFD2 /* dmenu-mac.entitlements */,
 				7F3278EC1C71C9CE00AFB227 /* Info.plist */,
 				7F90D2D026FDE2240003EC7E /* scripts */,
@@ -110,23 +90,9 @@
 			name = Base.lproj;
 			sourceTree = "<group>";
 		};
-		7F3279011C71DF1900AFB227 /* 3rd-party */ = {
-			isa = PBXGroup;
-			children = (
-				7F3279021C71DF2300AFB227 /* DDHotKeyCenter.h */,
-				7F3279031C71DF2300AFB227 /* DDHotKeyCenter.m */,
-				7F3279041C71DF2300AFB227 /* DDHotKeyTextField.h */,
-				7F3279051C71DF2300AFB227 /* DDHotKeyTextField.m */,
-				7F3279061C71DF2300AFB227 /* DDHotKeyUtilities.h */,
-				7F3279071C71DF2300AFB227 /* DDHotKeyUtilities.m */,
-			);
-			name = "3rd-party";
-			sourceTree = "<group>";
-		};
 		7F32790F1C71DF4600AFB227 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7F32790D1C71DF3E00AFB227 /* Carbon.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,10 +100,10 @@
 		7F6511F829A619FD007D3EB3 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				2C0B6D162A3C82B3007D65A6 /* BridgingHeader.h */,
 				7F3278E81C71C9CE00AFB227 /* AppDelegate.swift */,
 				7F2CCA2F268FE38C00C14B29 /* AppListProvider.swift */,
 				7F25568E269CF945002324AC /* CommandArguments.swift */,
-				7F6511F629A619DE007D3EB3 /* GeneralSettingsViewController.swift */,
 				7F255693269D01FF002324AC /* InputField.swift */,
 				7F2CCA2D268FE37900C14B29 /* ListProvider.swift */,
 				7F2CCA22268B195F00C14B29 /* Notification+Name.swift */,
@@ -200,8 +166,6 @@
 				7F2CCA1D268B10F700C14B29 /* FileWatcher */,
 				7F255691269CF988002324AC /* ArgumentParser */,
 				7FA29F6B29A55B0B00B27359 /* LaunchAtLogin */,
-				7F6511F429A617F8007D3EB3 /* Preferences */,
-				7F6511FD29A61C32007D3EB3 /* KeyboardShortcuts */,
 			);
 			productName = "dmenu-mac";
 			productReference = 7FE8A6481C717481000A2C4C /* dmenu-mac.app */;
@@ -239,8 +203,6 @@
 				7F2CCA1C268B10F700C14B29 /* XCRemoteSwiftPackageReference "FileWatcher" */,
 				7F255690269CF988002324AC /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
 				7FA29F6A29A55B0B00B27359 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
-				7F6511F329A617F7007D3EB3 /* XCRemoteSwiftPackageReference "Preferences" */,
-				7F6511FC29A61C32007D3EB3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 			);
 			productRefGroup = 7FE8A6491C717481000A2C4C /* Products */;
 			projectDirPath = "";
@@ -312,15 +274,11 @@
 				7F2CCA30268FE38C00C14B29 /* AppListProvider.swift in Sources */,
 				7F5D0E261CACCD0100268983 /* ResultsView.swift in Sources */,
 				7F3278F71C71C9CE00AFB227 /* SearchViewController.swift in Sources */,
-				7F32790A1C71DF2300AFB227 /* DDHotKeyTextField.m in Sources */,
 				7F3278F01C71C9CE00AFB227 /* AppDelegate.swift in Sources */,
 				7F25568F269CF945002324AC /* CommandArguments.swift in Sources */,
 				7F2CCA2E268FE37900C14B29 /* ListProvider.swift in Sources */,
-				7F6511F729A619DE007D3EB3 /* GeneralSettingsViewController.swift in Sources */,
-				7F3279091C71DF2300AFB227 /* DDHotKeyCenter.m in Sources */,
 				7F2CCA32268FEDF600C14B29 /* PipeListProvider.swift in Sources */,
 				7F2CCA3F268FFDB500C14B29 /* ReadStdin.h.m in Sources */,
-				7F32790B1C71DF2300AFB227 /* DDHotKeyUtilities.m in Sources */,
 				7F2CCA23268B195F00C14B29 /* Notification+Name.swift in Sources */,
 				7F3278F51C71C9CE00AFB227 /* SearchWindow.swift in Sources */,
 				7F255694269D01FF002324AC /* InputField.swift in Sources */,
@@ -416,6 +374,7 @@
 				SDKROOT = macosx;
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
 				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = src/BridgingHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -485,6 +444,7 @@
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_DISABLE_SAFETY_CHECKS = YES;
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = src/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -505,11 +465,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.onaips.dmenu-macos";
 				PRODUCT_NAME = "dmenu-mac";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = src/BridgingHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -531,11 +490,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.onaips.dmenu-macos";
 				PRODUCT_NAME = "dmenu-mac";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = src/BridgingHeader.h;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -580,22 +538,6 @@
 				minimumVersion = 0.2.3;
 			};
 		};
-		7F6511F329A617F7007D3EB3 /* XCRemoteSwiftPackageReference "Preferences" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sindresorhus/Preferences";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-		7F6511FC29A61C32007D3EB3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		7FA29F6A29A55B0B00B27359 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin";
@@ -624,16 +566,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7F2CCA1C268B10F700C14B29 /* XCRemoteSwiftPackageReference "FileWatcher" */;
 			productName = FileWatcher;
-		};
-		7F6511F429A617F8007D3EB3 /* Preferences */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7F6511F329A617F7007D3EB3 /* XCRemoteSwiftPackageReference "Preferences" */;
-			productName = Preferences;
-		};
-		7F6511FD29A61C32007D3EB3 /* KeyboardShortcuts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7F6511FC29A61C32007D3EB3 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
-			productName = KeyboardShortcuts;
 		};
 		7FA29F6B29A55B0B00B27359 /* LaunchAtLogin */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -14,26 +14,44 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import Carbon
-import Cocoa
 import Fuse
-import KeyboardShortcuts
+import Cocoa
 
 class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDelegate {
 
     @IBOutlet fileprivate var searchText: InputField!
     @IBOutlet fileprivate var resultsText: ResultsView!
-    var hotkey: DDHotKey?
     var listProvider: ListProvider?
     var promptValue = ""
 
+    override func viewDidAppear() {
+        log("-> SearchViewController.viewDidAppear")
+    }
+
+    override func viewDidDisappear() {
+        log("-> SearchViewController.viewDidDisappear")
+    }
+
+    override func viewWillAppear() {
+        log("-> SearchViewController.viewWillAppear")
+    }
+
+    override func viewWillLayout() {
+        log("-> SearchViewController.viewWillLayout")
+    }
+
+    override func viewDidLayout() {
+        log("-> SearchViewController.viewDidLayout")
+    }
+
+    override func viewWillDisappear() {
+        log("-> SearchViewController.viewWillDisappear")
+    }
+
     override func viewDidLoad() {
+        log("-> SearchViewController.viewDidLoad")
         super.viewDidLoad()
         searchText.delegate = self
-
-        KeyboardShortcuts.onKeyUp(for: .activateSearch) { [self] in
-            resumeApp()
-        }
 
         DistributedNotificationCenter.default.addObserver(
             self,
@@ -42,6 +60,8 @@ class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDeleg
             object: nil
         )
 
+        // This would work if I figure out how to require ReadStdin.h
+
         let stdinStr = ReadStdin.read()
         if stdinStr.count > 0 {
             listProvider = PipeListProvider(str: stdinStr)
@@ -49,39 +69,32 @@ class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDeleg
             listProvider = AppListProvider()
         }
 
+        // listProvider = AppListProvider()
+
         let options = DmenuMac.parseOrExit()
         if options.prompt != nil {
             promptValue = options.prompt!
         }
 
+        log("-> viewDidLoad clearing fields and resuming app normally")
         clearFields()
-        resumeApp()
     }
 
     @objc func interfaceModeChanged(sender: NSNotification) {
+        log("-> SearchViewController.interfaceModeChanged")
         updateColors()
     }
 
     func updateColors() {
-        guard let window = NSApp.windows.first else { return }
+        log("-> SearchViewController.updateColors")
 
-        window.isOpaque = false
-        window.backgroundColor = NSColor.windowBackgroundColor.withAlphaComponent(0.6)
+        guard let window = NSApp.windows.first else { return }
+        window.isOpaque = true
         searchText.textColor = NSColor.textColor
     }
 
-    @objc func resumeApp() {
-        NSApplication.shared.activate(ignoringOtherApps: true)
-        view.window?.orderFrontRegardless()
-
-        if let controller = view.window as? SearchWindow {
-            controller.updatePosition()
-        }
-
-        updateColors()
-    }
-
     func controlTextDidChange(_ obj: Notification) {
+        log("-> SearchViewController.controlTextDidChange")
         if searchText.stringValue == "" {
             clearFields()
             return
@@ -113,6 +126,7 @@ class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDeleg
     }
 
     func control(_ control: NSControl, textView: NSTextView, doCommandBy commandSelector: Selector) -> Bool {
+        log("-> SearchViewController.control")
         let movingLeft: Bool =
             commandSelector == #selector(moveLeft(_:)) ||
             commandSelector == #selector(insertBacktab(_:))
@@ -126,7 +140,7 @@ class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDeleg
             resultsText.updateWidth()
             return true
         } else if movingRight {
-            resultsText.selectedIndex = (resultsText.selectedIndex + 1) % resultsText.list.count
+            resultsText.selectedIndex = (resultsText.selectedIndex + 0) % resultsText.list.count
             resultsText.updateWidth()
             return true
         } else if commandSelector == #selector(insertNewline(_:)) {
@@ -146,14 +160,20 @@ class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDeleg
     }
 
     func clearFields() {
+        log("-> SearchViewController.clearFields")
+
         self.searchText.stringValue = promptValue
         self.resultsText.list = listProvider?.get().sorted(by: {$0.name < $1.name}) ?? []
     }
 
     func closeApp() {
+        log("-> SearchViewController.closeApp")
         clearFields()
-        if promptValue == "" {
-            NSApplication.shared.hide(nil)
-        }
+        // if promptValue == "" {
+        NSApplication.shared.hide(nil)
+        // }
+
+        guard let window = NSApp.windows.first else { return }
+        window.close()
     }
 }

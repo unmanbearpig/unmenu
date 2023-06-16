@@ -15,6 +15,7 @@
  */
 
 import Foundation
+import Cocoa
 
 /**
  * Provide a list from a terminal pipe. When action is performed, quit app since we act like a prompt

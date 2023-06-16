@@ -14,81 +14,53 @@
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
-import Cocoa
-import Carbon
 import LaunchAtLogin
-import Preferences
-import KeyboardShortcuts
+import Cocoa
 
-extension Settings.PaneIdentifier {
-    static let general = Self("general")
-}
+func log(_ message: String) {
+    let currentTime = Date()
 
-// import legacy settings if they existed
-let kLegacyKc = "kDefaultsGlobalShortcutKeycode"
-let kLegacyMf = "kDefaultsGlobalShortcutModifiedFlags"
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "HH:mm:ss.SSS"
+    let formattedTime = dateFormatter.string(from: currentTime)
 
-extension KeyboardShortcuts.Name {
-    static let activateSearch = Self("activateSearchGlobalShortcut", default: .init(
-        (UserDefaults.standard.object(forKey: kLegacyKc) != nil) ?
-            KeyboardShortcuts.Key(rawValue: UserDefaults.standard.integer(forKey: kLegacyKc)):
-                .space,
-        modifiers: (UserDefaults.standard.object(forKey: kLegacyKc) != nil) ?
-        NSEvent.ModifierFlags(rawValue: UInt(UserDefaults.standard.integer(forKey: kLegacyMf))) :
-            [.command]))
+    let logMessage = "\(formattedTime) - \(message)"
+    print(logMessage)
 }
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
-    @IBOutlet var controllerWindow: NSWindowController?
-
     private var statusItem: NSStatusItem!
     private var startAtLaunch: NSMenuItem!
 
+    var eventMonitor: Any?
+
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        log("application did finish launching")
+
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
         if let button = statusItem.button {
             button.title = "d"
         }
-        setupMenus()
+
+        let eventMask = NSEvent.EventTypeMask.keyDown
+        let eventHandler = { (event: NSEvent) -> Void in
+
+            if event.keyCode == 11 && event.modifierFlags.rawValue == 1310985 {
+                log("-> handler keycode = \(event.keyCode) flags = \(event.modifierFlags.rawValue) win \(event.windowNumber) \(event.window)")
+                log("   got correct keycode, showing the window")
+                NSApp.activate(ignoringOtherApps: true)
+                let window = NSApp.windows.first
+                log("window = \(window)")
+                window?.makeKeyAndOrderFront(nil)
+            }
+        }
+
+        self.eventMonitor = NSEvent.addGlobalMonitorForEvents(matching: eventMask, handler: eventHandler)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-    }
-
-    func setupMenus() {
-        let menu = NSMenu()
-
-        let open = NSMenuItem(title: "Open", action: #selector(resumeApp), keyEquivalent: "")
-        menu.addItem(open)
-
-        let settings = NSMenuItem(title: "Settings", action: #selector(openSettings), keyEquivalent: "")
-        menu.addItem(settings)
-
-        menu.addItem(NSMenuItem.separator())
-         startAtLaunch = NSMenuItem(title: "Launch at Login", action: #selector(toggleLaunchAtLogin), keyEquivalent: "")
-        startAtLaunch.state = LaunchAtLogin.isEnabled ? .on : .off
-        menu.addItem(startAtLaunch)
-
-        menu.addItem(NSMenuItem.separator())
-
-        menu.addItem(NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: ""))
-
-        statusItem.menu = menu
-    }
-
-    @objc func resumeApp() {
-        let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: Bundle.main)
-        // swiftlint:disable force_cast
-        let mainPageController = storyboard.instantiateController(
-            withIdentifier: "SearchViewController") as! SearchViewController
-        // swiftlint:enable force_cast
-        mainPageController.resumeApp()
-    }
-
-    @objc func openSettings() {
-        settingsWindowController.show()
     }
 
     @objc func toggleLaunchAtLogin() {
@@ -96,15 +68,4 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         LaunchAtLogin.isEnabled = enabled
         startAtLaunch.state = enabled ? .on : .off
     }
-
-    private lazy var settings: [SettingsPane] = [
-        GeneralSettingsViewController()
-    ]
-
-    private lazy var settingsWindowController = SettingsWindowController(
-        preferencePanes: settings,
-        style: .segmentedControl,
-        animated: true,
-        hidesToolbarForSingleItem: true
-    )
 }
