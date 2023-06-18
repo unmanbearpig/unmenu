@@ -49,7 +49,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
         self.eventMonitor = NSEvent.addGlobalMonitorForEvents(matching: eventMask, handler: eventHandler)
     }
-        
+
     func showAppWindow() {
         log("-> showAppWindow")
         NSApp.activate(ignoringOtherApps: true)
@@ -57,7 +57,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         log("window = \(window)")
         window?.makeKeyAndOrderFront(nil)
     }
-    
+
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         log("application did finish launching")
 

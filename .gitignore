@@ -3,3 +3,4 @@ xcuserdata/
 /*.xcarchive
 /*.zip
 build
+libfuzzylib.dylib

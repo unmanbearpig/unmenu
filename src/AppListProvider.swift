@@ -39,7 +39,7 @@ class AppListProvider: ListProvider {
             .applicationDirectory, .systemDomainMask, true)[0]
 
         log("systemApplicationDir = \(systemApplicationDir)")
-        
+
         // appName to dir recursivity key/value dict
         appDirDict[applicationDir] = true
         appDirDict[systemApplicationDir] = true
@@ -60,11 +60,11 @@ class AppListProvider: ListProvider {
         }
         filewatcher.start()
     }
-    
+
     func get() -> [ListItem] {
         return appList.map({ListItem(name: $0.deletingPathExtension().lastPathComponent, data: $0)})
     }
-    
+
     func updateAppList() {
         var newAppList = [URL]()
         appDirDict.keys.forEach { path in
