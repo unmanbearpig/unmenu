@@ -29,15 +29,15 @@ If you are like me and have a shit-ton of files on your computer, and spotlight 
 3. Type the application you want to open, hit enter to run the one selected.
 
 ### Pipes
-You can make dmenu-mac part of your scripting toolbox, use it to prompt the user for options:
-```
-echo "Yes\nNo" | dmenu-mac -p "Are you sure?"
-Yes
-```
+
+I don't care about pipes from original app,
+so I don't even know if they work in this fork
 
 ## Building
 
-run ./build.sh
+- Make sure you have Rust installed
+- Check out https://github.com/unmanbearpig/fuzzylib to the parent directory
+- run ./build.sh
 
 ## Features
 
@@ -51,4 +51,5 @@ Any improvement/bugfix is welcome.
 
 # Authors
 
-[@onaips](https://twitter.com/onaips)
+[@onaips - original author](https://twitter.com/onaips)
+[@unmanbearpig - this fork](https://unmb.pw)
