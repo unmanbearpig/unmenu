@@ -1,13 +1,18 @@
 
 # dmenu-mac
 
-[![ci](https://github.com/oNaiPs/dmenu-mac/workflows/Build/badge.svg)](https://github.com/oNaiPs/dmenu-mac)
-
-
 
 dmenu inspired application launcher.
 
 ![dmenu-mac demo](./demo.gif)
+
+## About this fork
+
+- Fixed (hopefully) random desktop switching when you hit the hotkey to spawn the app
+- Removed dependency on "Settings" library, now the hotkey is hardcoded to cmd-ctrl-x
+- Use https://crates.io/crates/fuzzy-matcher for matching, I find its behavior more intuitive
+- Allow to run scripts and non-app executables
+- You can put scripts to be run from this app to ~/.dmenu-bin/, can be a bash script or any kind of executable, just make sure to set "chmod +x" on the files you want to be able to run
 
 ## Who is it for
 Anyone that needs a quick and intuitive keyboard-only application launcher that does not rely on spotlight indexing.
@@ -30,19 +35,9 @@ echo "Yes\nNo" | dmenu-mac -p "Are you sure?"
 Yes
 ```
 
-## Installation
+## Building
 
-dmenu-mac can be installed with [brew](https://brew.sh/) running:
-
-```
-brew install dmenu-mac
-```
-
-Optionally, you can download it [here](https://github.com/oNaiPs/dmenu-mac/releases).
-
-NOTE: the releases are not signed yet, use it at your own risk. I'll take care of that as soon as we can assess the number of people interested in the project.
-
-*Mac OS X 10.12 or greater required.
+run ./build.sh
 
 ## Features
 
