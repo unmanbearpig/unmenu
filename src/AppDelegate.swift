@@ -35,6 +35,29 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
     var eventMonitor: Any?
 
+    func setupHotkeyHandler() {
+        let eventMask = NSEvent.EventTypeMask.keyDown
+        let eventHandler = { (event: NSEvent) -> Void in
+            // why is it not being called when I launch it not form xcode?
+            log("--- event handler")
+            if event.keyCode == 11 && event.modifierFlags.rawValue == 1310985 {
+                log("-> handler keycode = \(event.keyCode) flags = \(event.modifierFlags.rawValue) win \(event.windowNumber) \(event.window)")
+                log("   got correct keycode, showing the window")
+                self.showAppWindow()
+            }
+        }
+
+        self.eventMonitor = NSEvent.addGlobalMonitorForEvents(matching: eventMask, handler: eventHandler)
+    }
+        
+    func showAppWindow() {
+        log("-> showAppWindow")
+        NSApp.activate(ignoringOtherApps: true)
+        let window = NSApp.windows.first
+        log("window = \(window)")
+        window?.makeKeyAndOrderFront(nil)
+    }
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         log("application did finish launching")
 
@@ -44,20 +67,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
             button.title = "d"
         }
 
-        let eventMask = NSEvent.EventTypeMask.keyDown
-        let eventHandler = { (event: NSEvent) -> Void in
-
-            if event.keyCode == 11 && event.modifierFlags.rawValue == 1310985 {
-                log("-> handler keycode = \(event.keyCode) flags = \(event.modifierFlags.rawValue) win \(event.windowNumber) \(event.window)")
-                log("   got correct keycode, showing the window")
-                NSApp.activate(ignoringOtherApps: true)
-                let window = NSApp.windows.first
-                log("window = \(window)")
-                window?.makeKeyAndOrderFront(nil)
-            }
-        }
-
-        self.eventMonitor = NSEvent.addGlobalMonitorForEvents(matching: eventMask, handler: eventHandler)
+        self.setupHotkeyHandler()
+        log("set up hotkey handler")
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

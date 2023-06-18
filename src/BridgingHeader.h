@@ -18,5 +18,6 @@
 #define BridgingHeader_h
 
 #import "ReadStdin.h"
+#import "libfuzzylib.h"
 
 #endif /* BridgingHeader_h */

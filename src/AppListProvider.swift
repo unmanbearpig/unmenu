@@ -38,9 +38,12 @@ class AppListProvider: ListProvider {
         let systemApplicationDir = NSSearchPathForDirectoriesInDomains(
             .applicationDirectory, .systemDomainMask, true)[0]
 
+        log("systemApplicationDir = \(systemApplicationDir)")
+        
         // appName to dir recursivity key/value dict
         appDirDict[applicationDir] = true
         appDirDict[systemApplicationDir] = true
+        appDirDict["/System/Applications/Utilities/"] = true
         appDirDict["/System/Library/CoreServices/"] = false
         let customDir = (FileManager.default.homeDirectoryForCurrentUser).appendingPathComponent(".dmenu-bin/").path
         log("customDir = \(customDir)")
@@ -57,12 +60,19 @@ class AppListProvider: ListProvider {
         }
         filewatcher.start()
     }
-
+    
+    func get() -> [ListItem] {
+        return appList.map({ListItem(name: $0.deletingPathExtension().lastPathComponent, data: $0)})
+    }
+    
     func updateAppList() {
         var newAppList = [URL]()
         appDirDict.keys.forEach { path in
             let urlPath = URL(fileURLWithPath: path, isDirectory: true)
+            log("-----------------\npath = \(path) urlPath = \(urlPath)")
+
             let list = getAppList(urlPath, recursive: appDirDict[path]!)
+            log("app list = \(list)\n-------------------------\n\n")
             newAppList.append(contentsOf: list)
         }
         appList = newAppList
@@ -80,19 +90,15 @@ class AppListProvider: ListProvider {
 
         do {
             let subs = try fileManager.contentsOfDirectory(atPath: appDir.path)
-
+            // TODO why can't we find Terminal.app in /System/Applications/Utilities ?
             for sub in subs {
                 let dir = appDir.appendingPathComponent(sub)
-
                 let isDirectory = isDir(path: dir.path)
                 if isDirectory {
-                    log("found directory \(dir)")
                     if dir.pathExtension == "app" {
-                        log("directory is an app \(dir)")
                         list.append(dir)
                     }
                 } else if FileManager.default.isExecutableFile(atPath: dir.path) {
-                    log("found executable \(dir)")
                     list.append(dir)
                 } else if dir.hasDirectoryPath && recursive {
                     list.append(contentsOf: self.getAppList(dir))
@@ -101,6 +107,7 @@ class AppListProvider: ListProvider {
                 }
             }
         } catch {
+            log("Error on getAppList appDir = \(appDir), recursive = \(recursive)")
             NSLog("Error on getAppList: %@", error.localizedDescription)
         }
         return list
@@ -126,10 +133,12 @@ class AppListProvider: ListProvider {
     }
 
     func doAction(item: ListItem) {
-        guard let app: URL = item.data as? URL else {
-            log("Cannot do action on item \(item.name)")
-            return
-        }
+        log("-> doAction \(item)")
+        // guard let app: URL = item.data as? URL else {
+        //     log("Cannot do action on item \(item)")
+        //     return
+        // }
+        let app: URL = URL.init(fileURLWithPath: (item.data as? String)!)
         DispatchQueue.main.async {
             log("opening \(app)")
 
