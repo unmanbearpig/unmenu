@@ -122,22 +122,10 @@ class AppListProvider: ListProvider {
        let outputPipe = Pipe()
        task.standardOutput = outputPipe
        task.launch()
-
-       // We don't need to do that, right?
-       // task.waitUntilExit()
-
-       // let outputData = outputPipe.fileHandleForReading.readDataToEndOfFile()
-       // if let outputString = String(data: outputData, encoding: .utf8) {
-       //     print(outputString)
-       // }
     }
 
     func doAction(item: ListItem) {
         log("-> doAction \(item)")
-        // guard let app: URL = item.data as? URL else {
-        //     log("Cannot do action on item \(item)")
-        //     return
-        // }
         let app: URL = URL.init(fileURLWithPath: (item.data as? String)!)
         DispatchQueue.main.async {
             log("opening \(app)")
