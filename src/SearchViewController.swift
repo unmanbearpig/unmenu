@@ -21,22 +21,18 @@ class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDeleg
 
     @IBOutlet fileprivate var searchText: InputField!
     @IBOutlet fileprivate var resultsText: ResultsView!
-    var listProvider: ListProvider?
     var fuzzyMatcher: FuzzyMatcher?
     var promptValue = ""
     func refreshFuzzyMatcher() {
         log("-> refreshFuzzyMatcher")
-        fuzzyMatcher?.clear()
-        let list = listProvider?.get() ?? []
-        for item in list {
-            guard let url = item.data as? URL else { continue }
-            fuzzyMatcher?.add(item.name, path: url)
-        }
+        clearFields()
+        fuzzyMatcher?.rescan()
     }
 
     override func viewDidAppear() {
         log("-> SearchViewController.viewDidAppear")
         refreshFuzzyMatcher()
+        self.resultsText.clear()
     }
 
     override func viewDidDisappear() {
@@ -61,6 +57,7 @@ class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDeleg
 
     override func viewDidLoad() {
         log("-> SearchViewController.viewDidLoad")
+        fuzzyMatcher?.rescan()
         super.viewDidLoad()
         searchText.delegate = self
 
@@ -71,13 +68,13 @@ class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDeleg
             object: nil
         )
 
-        let stdinStr = ReadStdin.read()
-        if stdinStr.count > 0 {
-            listProvider = PipeListProvider(str: stdinStr)
-        } else {
-            listProvider = AppListProvider()
-        }
-
+        // let stdinStr = ReadStdin.read()
+        // if stdinStr.count > 0 {
+        //     listProvider = PipeListProvider(str: stdinStr)
+        // } else {
+        //     listProvider = AppListProvider()
+        // }
+//
         fuzzyMatcher = FuzzyMatcher.init()
 
         let options = DmenuMac.parseOrExit()
@@ -95,7 +92,7 @@ class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDeleg
     }
 
     func updateColors() {
-        log("-> SearchViewController.updateColors")
+        // log("-> SearchViewController.updateColors")
 
         guard let window = NSApp.windows.first else { return }
         window.isOpaque = true
@@ -104,58 +101,31 @@ class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDeleg
 
     func controlTextDidChange(_ obj: Notification) {
         log("-> SearchViewController.controlTextDidChange")
-        if false {
-            // Original searcher
-            if searchText.stringValue == "" {
-                clearFields()
-                return
-            }
-
-            // Get provider list, filter using fuzzy search, apply
-            var scoreDict = [Int: Double]()
-
-            let fuse = Fuse(threshold: 0.4)
-            let pattern = fuse.createPattern(from: searchText.stringValue)
-
-            let list = listProvider?.get() ?? []
-
-            for (idx, item) in list.enumerated() {
-                guard let result = fuse.search(pattern, in: item.name) else {
-                    continue
-                }
-                scoreDict[idx] = result.score
-            }
-
-            let sortedScoreDict = scoreDict.sorted(by: {$0.1 < $1.1}).map({list[$0.0]})
-
-            if !sortedScoreDict.isEmpty {
-                self.resultsText.list = sortedScoreDict
-            } else {
-                self.resultsText.clear()
-            }
-
-            self.resultsText.updateWidth()
-
-        } else {
-            if searchText.stringValue == "" {
-                clearFields()
-                return
-            }
-
-            // Get provider list, filter using fuzzy search, apply
-            var scoreDict = [Int: Double]()
-
-            let searchResults = fuzzyMatcher?.search(searchText.stringValue)
-            let sortedScoreDict = searchResults?.map { ListItem(name: $0.name, data: $0.payload) } ?? []
-
-            if !sortedScoreDict.isEmpty {
-                self.resultsText.list = sortedScoreDict
-            } else {
-                self.resultsText.clear()
-            }
-
-            self.resultsText.updateWidth()
+        if searchText.stringValue == "" {
+            clearFields()
+            return
         }
+
+        // Get provider list, filter using fuzzy search, apply
+        // var scoreDict = [Int: Double]()
+
+        let searchResults = fuzzyMatcher?.search(pattern: searchText.stringValue)
+        // let sortedScoreDict = searchResults?.map { ListItem(name: $0.name, data: $0.payload) } ?? []
+        // runtime error here
+        let sortedScoreDict = searchResults?.compactMap { searchResult -> ListItem? in
+            guard let name = searchResult.name else {
+                return nil // Ignore items with missing name
+            }
+            return ListItem(name: name, data: searchResult)
+        } ?? []
+
+        if !sortedScoreDict.isEmpty {
+            self.resultsText.list = sortedScoreDict
+        } else {
+            self.resultsText.clear()
+        }
+
+        self.resultsText.updateWidth()
     }
 
     func control(_ control: NSControl, textView: NSTextView, doCommandBy commandSelector: Selector) -> Bool {
@@ -167,6 +137,8 @@ class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDeleg
             commandSelector == #selector(moveRight(_:)) ||
             commandSelector == #selector(insertTab(_:))
 
+        print("movingLeft = \(movingLeft) movingRight = \(movingRight) commandSelector = \(commandSelector)")
+        
         if movingLeft {
             resultsText.selectedIndex = resultsText.selectedIndex == 0 ?
                 resultsText.list.count - 1 : resultsText.selectedIndex - 1
@@ -177,11 +149,22 @@ class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDeleg
             resultsText.updateWidth()
             return true
         } else if commandSelector == #selector(insertNewline(_:)) {
-            // open current selected app
+            // print("TODO open \(resultsText.selectedItem())")
             if let item = resultsText.selectedItem() {
-                listProvider?.doAction(item: item)
-                closeApp()
+                if let item = item.data {
+                    if let item = item as? Item {
+                        item.open()
+                        closeApp()
+                        clearFields()
+                    }
+                }
             }
+            // open current selected app
+            // if let item = resultsText.selectedItem() {
+            //     listProvider?.doAction(item: item)
+            //     closeApp()
+            // }
+            
 
             return true
         } else if commandSelector == #selector(cancelOperation(_:)) {
@@ -196,7 +179,7 @@ class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDeleg
         log("-> SearchViewController.clearFields")
 
         self.searchText.stringValue = promptValue
-        self.resultsText.list = listProvider?.get().sorted(by: {$0.name < $1.name}) ?? []
+        // self.resultsText.list = listProvider?.get().sorted(by: {$0.name < $1.name}) ?? []
     }
 
     func closeApp() {

@@ -31,26 +31,26 @@ class AppListProvider: ListProvider {
 
     init() {
         log("-> init")
-        let applicationDir = NSSearchPathForDirectoriesInDomains(
-            .applicationDirectory, .localDomainMask, true)[0]
-
-        // Catalina moved default applications under a different mask.
-        let systemApplicationDir = NSSearchPathForDirectoriesInDomains(
-            .applicationDirectory, .systemDomainMask, true)[0]
-
-        log("systemApplicationDir = \(systemApplicationDir)")
-
-        // appName to dir recursivity key/value dict
-        appDirDict[applicationDir] = true
-        appDirDict[systemApplicationDir] = true
-        appDirDict["/System/Applications/Utilities/"] = true
-        appDirDict["/System/Library/CoreServices/"] = false
-        let customDir = (FileManager.default.homeDirectoryForCurrentUser).appendingPathComponent(".dmenu-bin/").path
-        log("customDir = \(customDir)")
-        appDirDict[customDir] = true
-
-        initFileWatch(Array(appDirDict.keys))
-        updateAppList()
+        // let applicationDir = NSSearchPathForDirectoriesInDomains(
+        //     .applicationDirectory, .localDomainMask, true)[0]
+//
+        // // Catalina moved default applications under a different mask.
+        // let systemApplicationDir = NSSearchPathForDirectoriesInDomains(
+        //     .applicationDirectory, .systemDomainMask, true)[0]
+//
+        // log("systemApplicationDir = \(systemApplicationDir)")
+//
+        // // appName to dir recursivity key/value dict
+        // appDirDict[applicationDir] = true
+        // appDirDict[systemApplicationDir] = true
+        // appDirDict["/System/Applications/Utilities/"] = true
+        // appDirDict["/System/Library/CoreServices/"] = false
+        // let customDir = (FileManager.default.homeDirectoryForCurrentUser).appendingPathComponent(".dmenu-bin/").path
+        // log("customDir = \(customDir)")
+        // appDirDict[customDir] = true
+//
+        // initFileWatch(Array(appDirDict.keys))
+        // updateAppList()
     }
 
     func initFileWatch(_ dirs: [String]) {

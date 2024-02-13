@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C1B016A2A3F4F2300434A7A /* FuzzyMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B01682A3F4F2300434A7A /* FuzzyMatcher.swift */; };
 		2C1B016B2A3F4F2300434A7A /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1B01692A3F4F2300434A7A /* Matcher.swift */; };
-		2C6617112A3DA8CD008C5A1E /* libfuzzylib.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6617102A3DA8CD008C5A1E /* libfuzzylib.dylib */; };
+		2CC637A22B7BCA1F00BCAF02 /* libfuzzylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC637A12B7BCA1F00BCAF02 /* libfuzzylib.a */; };
 		7F25568F269CF945002324AC /* CommandArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F25568E269CF945002324AC /* CommandArguments.swift */; };
 		7F255692269CF988002324AC /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 7F255691269CF988002324AC /* ArgumentParser */; };
 		7F255694269D01FF002324AC /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F255693269D01FF002324AC /* InputField.swift */; };
@@ -36,8 +36,8 @@
 		2C0B6D162A3C82B3007D65A6 /* BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = src/BridgingHeader.h; sourceTree = "<group>"; };
 		2C1B01682A3F4F2300434A7A /* FuzzyMatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FuzzyMatcher.swift; path = src/FuzzyMatcher.swift; sourceTree = "<group>"; };
 		2C1B01692A3F4F2300434A7A /* Matcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Matcher.swift; path = src/Matcher.swift; sourceTree = "<group>"; };
-		2C6617102A3DA8CD008C5A1E /* libfuzzylib.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfuzzylib.dylib; sourceTree = "<group>"; };
 		2C6617142A3DAD5C008C5A1E /* libfuzzylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libfuzzylib.h; sourceTree = "<group>"; };
+		2CC637A12B7BCA1F00BCAF02 /* libfuzzylib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfuzzylib.a; path = ../fuzzylib/target/release/libfuzzylib.a; sourceTree = "<group>"; };
 		7F25568E269CF945002324AC /* CommandArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommandArguments.swift; path = src/CommandArguments.swift; sourceTree = "<group>"; };
 		7F255693269D01FF002324AC /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputField.swift; path = src/InputField.swift; sourceTree = "<group>"; };
 		7F2CCA22268B195F00C14B29 /* Notification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Notification+Name.swift"; path = "src/Notification+Name.swift"; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C6617112A3DA8CD008C5A1E /* libfuzzylib.dylib in Frameworks */,
+				2CC637A22B7BCA1F00BCAF02 /* libfuzzylib.a in Frameworks */,
 				7F2CCA1E268B10F700C14B29 /* FileWatcher in Frameworks */,
 				7F255692269CF988002324AC /* ArgumentParser in Frameworks */,
 				7FA29F6C29A55B0B00B27359 /* LaunchAtLogin in Frameworks */,
@@ -101,7 +101,7 @@
 		7F32790F1C71DF4600AFB227 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2C6617102A3DA8CD008C5A1E /* libfuzzylib.dylib */,
+				2CC637A12B7BCA1F00BCAF02 /* libfuzzylib.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -398,6 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_OPTIMIZATION = time;
 				CLANG_ANALYZER_GCD_PERFORMANCE = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -453,7 +454,7 @@
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
 				SWIFT_COMPILATION_MODE = wholemodule;

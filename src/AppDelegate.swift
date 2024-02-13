@@ -17,16 +17,38 @@
 import LaunchAtLogin
 import Cocoa
 
+// func log(_ message: String) {
+//     let currentTime = Date()
+//
+//     let dateFormatter = DateFormatter()
+//     dateFormatter.dateFormat = "HH:mm:ss.SSS"
+//     let formattedTime = dateFormatter.string(from: currentTime)
+//
+//     let logMessage = "\(formattedTime) - \(message)"
+//     print(logMessage)
+// }
+
 func log(_ message: String) {
-    let currentTime = Date()
+    let fileURL = URL(fileURLWithPath: "/Users/ivan/dmenu-mac.log")
 
-    let dateFormatter = DateFormatter()
-    dateFormatter.dateFormat = "HH:mm:ss.SSS"
-    let formattedTime = dateFormatter.string(from: currentTime)
-
-    let logMessage = "\(formattedTime) - \(message)"
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+    let timestamp = formatter.string(from: Date())
+    let logMessage = "[\(timestamp)] \(message)\n"
+    
+    // Append the log message to the file
+    if let fileHandle = try? FileHandle(forWritingTo: fileURL) {
+        fileHandle.seekToEndOfFile()
+        fileHandle.write(logMessage.data(using: .utf8)!)
+        fileHandle.closeFile()
+    } else {
+        try? logMessage.write(to: fileURL, atomically: true, encoding: .utf8)
+    }
+    
+    // Print the log message
     print(logMessage)
 }
+
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
@@ -35,26 +57,57 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
 
     var eventMonitor: Any?
 
-    func setupHotkeyHandler() {
-        let eventMask = NSEvent.EventTypeMask.keyDown
-        let eventHandler = { (event: NSEvent) -> Void in
-            // why is it not being called when I launch it not form xcode?
-            log("--- event handler")
-            if event.keyCode == 11 && event.modifierFlags.rawValue == 1310985 {
-                log("-> handler keycode = \(event.keyCode) flags = \(event.modifierFlags.rawValue) win \(event.windowNumber) \(event.window)")
-                log("   got correct keycode, showing the window")
-                self.showAppWindow()
-            }
+    func showAlert() {
+        let alert = NSAlert()
+        alert.messageText = "Alert"
+        alert.informativeText = "This is an example alert."
+        alert.addButton(withTitle: "OK")
+        
+        let modalResult = alert.runModal()
+        
+        if modalResult == NSApplication.ModalResponse.alertFirstButtonReturn {
+            // Handle the user's response when OK is clicked
+            print("OK clicked")
         }
+    }
+    
+    func waitForPermissions() {
+        let options: NSDictionary = [kAXTrustedCheckOptionPrompt.takeUnretainedValue() as String : true]
+        let accessEnabled = AXIsProcessTrustedWithOptions(options)
 
-        self.eventMonitor = NSEvent.addGlobalMonitorForEvents(matching: eventMask, handler: eventHandler)
+        if !accessEnabled {
+           log("Access Not Enabled")
+            // Delay the next iteration by 1 second
+            DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                log("Retrying...")
+                self.waitForPermissions()
+            }
+        } else {
+           log("Access Granted")
+            let eventMask = NSEvent.EventTypeMask.keyDown
+            let eventHandler = { (event: NSEvent) -> Void in
+                log("--- event handler")
+                if event.keyCode == 11 && event.modifierFlags.rawValue == 1310985 {
+                    log("-> handler keycode = \(event.keyCode) flags = // \(event.modifierFlags.rawValue) win \(event.windowNumber) // \(event.window)")
+                    log("   got correct keycode, showing the window")
+                    self.showAppWindow()
+                }
+            }
+
+            self.eventMonitor = NSEvent.addGlobalMonitorForEvents(matching: eventMask, handler: eventHandler)
+
+        }
+    }
+    
+    func setupHotkeyHandler() {
+        waitForPermissions()
     }
 
     func showAppWindow() {
         log("-> showAppWindow")
         NSApp.activate(ignoringOtherApps: true)
         let window = NSApp.windows.first
-        log("window = \(window)")
+        // log("window = \(window)")
         window?.makeKeyAndOrderFront(nil)
     }
 

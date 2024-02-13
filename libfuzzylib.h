@@ -9,20 +9,23 @@
 #ifndef libfuzzylib_h
 #define libfuzzylib_h
 
+// typedef struct Matcher Matcher;
+// typedef struct Item Item;
+typedef struct SearchResults SearchResults;
+
 void* matcher_new();
-// 81 pub unsafe extern "C" fn matcher_add(matcher_ptr: *mut CMatcher, item_name: *const c_char, item_payload: *const c_char) {
+void matcher_rescan(void* matcher);
+SearchResults* matcher_search(void* matcher, const char* pattern);
+void search_results_free(SearchResults* results);
+// char* get_item_name(const Item* item);
+char* get_item_name(const void *item);
 
-void matcher_add(void* matcher, const char* item_name, const char* item_payload);
-void matcher_free(void* matcher);
-void* matcher_search(const void* matcher, const char* pattern);
-void matcher_clear(void* matcher);
-void search_result_free(void* results);
-const char* search_result_item_name(const void* results, int index);
-const char* search_result_item_payload(const void* results, int index);
-int8_t search_result_is_null(const void* result, int index);
-int64_t search_result_score(const void* results, int index);
+void item_open(const void *item);
 
-int search_result_count(const void* results);
+struct SearchResults {
+    uint64_t num_items;
+    const void* items;
+};
 
 
 #endif /* libfuzzylib_h */
