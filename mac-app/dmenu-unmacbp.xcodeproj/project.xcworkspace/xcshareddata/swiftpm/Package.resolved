@@ -1,0 +1,41 @@
+{
+  "pins" : [
+    {
+      "identity" : "filewatcher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/eonist/FileWatcher.git",
+      "state" : {
+        "revision" : "e67c2a99502eade343fecabeca8c57e749a55b59",
+        "version" : "0.2.3"
+      }
+    },
+    {
+      "identity" : "launchatlogin",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/sindresorhus/LaunchAtLogin",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7ad6331f9c38953eb1ce8737758e18f7607e984a"
+      }
+    },
+    {
+      "identity" : "swift-argument-parser",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-argument-parser",
+      "state" : {
+        "revision" : "6b2aa2748a7881eebb9f84fb10c01293e15b52ca",
+        "version" : "0.5.0"
+      }
+    },
+    {
+      "identity" : "tomldecoder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dduan/TOMLDecoder",
+      "state" : {
+        "revision" : "a70a127cab92ddcb562a548190fa3ad2a2e5f9bc",
+        "version" : "0.2.2"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -1,0 +1,7 @@
+xcuserdata/
+/*.app
+/*.xcarchive
+/*.zip
+build
+libfuzzylib.dylib
+.DS_Store
