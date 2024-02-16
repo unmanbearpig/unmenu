@@ -1,6 +1,8 @@
-xcuserdata/
-/*.app
-/*.xcarchive
-/*.zip
-build
-libfuzzylib.dylib
+/mac-app/xcuserdata/
+/mac-app//*.app
+/mac-app//*.xcarchive
+/mac-app//*.zip
+/mac-app/build
+/mac-app/libfuzzylib.dylib
+/fuzzylib/target
+/fuzzylib/Cargo.lock
