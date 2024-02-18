@@ -16,7 +16,6 @@
 
 import Foundation
 import FileWatcher
-import Fuse
 import Cocoa
 
 

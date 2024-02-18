@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FDAA06D5-470F-421C-9529-938BB6599F4E"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4EDBEB89-FC83-48B0-8EAA-8B8832CECAB6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FuzzyMatcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "search(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4EDBEB89-FC83-48B0-8EAA-8B8832CECAB6 - e3d7a18f7563e96c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.FuzzyMatcher.search(Swift.String) -&gt; Swift.Array&lt;dmenu_mac.SearchResult&gt;"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/software/github.com/oNaiPs/dmenu-mac/FuzzyMatcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "484">
+               </Location>
+               <Location
+                  uuid = "4EDBEB89-FC83-48B0-8EAA-8B8832CECAB6 - 37da29811ecd362e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.UnsafePointer&lt;Swift.Int8&gt;) -&gt; Swift.UnsafePointer&lt;Swift.Int8&gt; in dmenu_mac.FuzzyMatcher.search(Swift.String) -&gt; Swift.Array&lt;dmenu_mac.SearchResult&gt;"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/software/github.com/oNaiPs/dmenu-mac/FuzzyMatcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "24257D5D-3540-488F-B71D-8182EE812D10"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FuzzyMatcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "search(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "24257D5D-3540-488F-B71D-8182EE812D10 - e3d7a18f7563e92a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.FuzzyMatcher.search(Swift.String) -&gt; Swift.Array&lt;dmenu_mac.SearchResult&gt;"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/software/github.com/oNaiPs/dmenu-mac/FuzzyMatcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "808">
+               </Location>
+               <Location
+                  uuid = "24257D5D-3540-488F-B71D-8182EE812D10 - e3d7a18f7563e9c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.FuzzyMatcher.search(Swift.String) -&gt; Swift.Array&lt;dmenu_mac.SearchResult&gt;"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/software/github.com/oNaiPs/dmenu-mac/FuzzyMatcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "548">
+               </Location>
+               <Location
+                  uuid = "24257D5D-3540-488F-B71D-8182EE812D10 - e3d7a18f7563e9c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.FuzzyMatcher.search(Swift.String) -&gt; Swift.Array&lt;dmenu_mac.SearchResult&gt;"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/software/github.com/oNaiPs/dmenu-mac/FuzzyMatcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "772">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3BB1E2C5-F6F2-4C55-B661-5D77CC18499B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FuzzyMatcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "search(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3BB1E2C5-F6F2-4C55-B661-5D77CC18499B - e3d7a18f7563e9c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.FuzzyMatcher.search(Swift.String) -&gt; Swift.Array&lt;dmenu_mac.SearchResult&gt;"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/software/github.com/oNaiPs/dmenu-mac/FuzzyMatcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "888">
+               </Location>
+               <Location
+                  uuid = "3BB1E2C5-F6F2-4C55-B661-5D77CC18499B - e3d7a18f7563e9e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.FuzzyMatcher.search(Swift.String) -&gt; Swift.Array&lt;dmenu_mac.SearchResult&gt;"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/software/github.com/oNaiPs/dmenu-mac/FuzzyMatcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "796">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "14CA7383-6FF8-44E7-8622-BEB988BE36D6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/SearchViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
+            landmarkName = "controlTextDidChange(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "14CA7383-6FF8-44E7-8622-BEB988BE36D6 - 48f986d6e4991cbf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.SearchViewController.controlTextDidChange(Foundation.Notification) -&gt; ()"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/projects/stuff/dmenu-mac/src/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "868">
+               </Location>
+               <Location
+                  uuid = "14CA7383-6FF8-44E7-8622-BEB988BE36D6 - 48f986d6e4991cbf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.SearchViewController.controlTextDidChange(Foundation.Notification) -&gt; ()"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/projects/stuff/dmenu-mac/src/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "916">
+               </Location>
+               <Location
+                  uuid = "14CA7383-6FF8-44E7-8622-BEB988BE36D6 - 81dcb9b383e77af3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (dmenu_mac.Item) -&gt; Swift.Optional&lt;dmenu_mac.ListItem&gt; in dmenu_mac.SearchViewController.controlTextDidChange(Foundation.Notification) -&gt; ()"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/projects/stuff/dmenu-mac/src/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "14CA7383-6FF8-44E7-8622-BEB988BE36D6 - 48f986d6e4991cbf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.SearchViewController.controlTextDidChange(Foundation.Notification) -&gt; ()"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/projects/stuff/dmenu-mac/src/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "832">
+               </Location>
+               <Location
+                  uuid = "14CA7383-6FF8-44E7-8622-BEB988BE36D6 - 48f986d6e4991cbf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.SearchViewController.controlTextDidChange(Foundation.Notification) -&gt; ()"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/projects/stuff/dmenu-mac/src/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "113"
+                  endingLineNumber = "113"
+                  offsetFromSymbolStart = "880">
+               </Location>
+               <Location
+                  uuid = "14CA7383-6FF8-44E7-8622-BEB988BE36D6 - 48f986d6e4991c9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.SearchViewController.controlTextDidChange(Foundation.Notification) -&gt; ()"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/projects/stuff/dmenu-mac/src/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "832">
+               </Location>
+               <Location
+                  uuid = "14CA7383-6FF8-44E7-8622-BEB988BE36D6 - 48f986d6e4991c9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.SearchViewController.controlTextDidChange(Foundation.Notification) -&gt; ()"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/projects/stuff/dmenu-mac/src/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "114"
+                  endingLineNumber = "114"
+                  offsetFromSymbolStart = "880">
+               </Location>
+               <Location
+                  uuid = "14CA7383-6FF8-44E7-8622-BEB988BE36D6 - 81dcb9b383e77912"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (dmenu_mac.Item) -&gt; Swift.Optional&lt;dmenu_mac.ListItem&gt; in dmenu_mac.SearchViewController.controlTextDidChange(Foundation.Notification) -&gt; ()"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/projects/stuff/dmenu-mac/src/SearchViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "115"
+                  endingLineNumber = "115"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0366ED70-1229-482E-BD53-E357233D86CB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/FuzzyMatcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
+            landmarkName = "search(pattern:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2EE94BD6-B483-4270-BE94-0C65E5648AAC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/FuzzyMatcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "search(pattern:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "07113620-DB7E-469A-8129-E21EB1C70E36"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/FuzzyMatcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "search(pattern:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "07113620-DB7E-469A-8129-E21EB1C70E36 - 435d40f81f453bc2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.FuzzyMatcher.search(pattern: Swift.String) -&gt; Swift.Array&lt;dmenu_mac.Item&gt;"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/projects/stuff/dmenu-mac/src/FuzzyMatcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "2912">
+               </Location>
+               <Location
+                  uuid = "07113620-DB7E-469A-8129-E21EB1C70E36 - 435d40f81f453bc2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.FuzzyMatcher.search(pattern: Swift.String) -&gt; Swift.Array&lt;dmenu_mac.Item&gt;"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/projects/stuff/dmenu-mac/src/FuzzyMatcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "2908">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "483CE5EE-EBD5-4240-9B8F-5435802BE9F8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/FuzzyMatcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "name"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1DEB2A16-CA92-421F-A883-5CDD88EDE27F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "src/FuzzyMatcher.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "name"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "1DEB2A16-CA92-421F-A883-5CDD88EDE27F - 81f5dc3b5a7eabc6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.Item.name.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/projects/stuff/dmenu-mac/src/FuzzyMatcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "161"
+                  endingLineNumber = "161"
+                  offsetFromSymbolStart = "592">
+               </Location>
+               <Location
+                  uuid = "1DEB2A16-CA92-421F-A883-5CDD88EDE27F - 81f5dc3b5a7eabe7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.Item.name.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/projects/stuff/dmenu-mac/src/FuzzyMatcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "660">
+               </Location>
+               <Location
+                  uuid = "1DEB2A16-CA92-421F-A883-5CDD88EDE27F - 81f5dc3b5a7eabe7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dmenu_mac.Item.name.getter : Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "dmenu-mac"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivan/projects/stuff/dmenu-mac/src/FuzzyMatcher.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "624">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
