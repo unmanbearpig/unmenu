@@ -7,8 +7,8 @@ fuzzylib:
 
 mac-app: fuzzylib
 	# not sure if we need build at the end
-	cd mac-app && SYMROOT=symroot xcodebuild -project dmenu-unmacbp.xcodeproj -scheme dmenu-unmacbp -configuration Release # build
+	cd mac-app && xcodebuild -project dmenu-unmacbp.xcodeproj -scheme dmenu-unmacbp -derivedDataPath ../build build
 
 clean:
 	cd fuzzylib && cargo clean
-	cd mac-app && xcodebuild -project dmenu-unmacbp.xcodeproj clean
+	cd mac-app && rm -rf clean
