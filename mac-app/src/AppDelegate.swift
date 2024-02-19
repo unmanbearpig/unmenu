@@ -29,7 +29,7 @@ import Cocoa
 // }
 
 func log(_ message: String) {
-    // let fileURL = URL(fileURLWithPath: "/Users/unmbp/dmenu-unmacbp.log")
+    // let fileURL = URL(fileURLWithPath: "/Users/unmbp/unmenu.log")
 
     let formatter = DateFormatter()
     formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -93,9 +93,9 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         
         if !doWeHavePermissions() {
             alert.messageText = "Accessibility Permission Required"
-            alert.informativeText = "To set up a global key handler, dmenu-unmacbp requires accessibility permissions. Please grant these permissions in the system settings."
+            alert.informativeText = "To set up a global key handler, unmenu requires accessibility permissions. Please grant these permissions in the system settings."
             alert.addButton(withTitle: "Open System Settings")
-            alert.addButton(withTitle: "Quit dmenu-unmacbp")
+            alert.addButton(withTitle: "Quit unmenu")
             alert.beginSheetModal(for: NSApp.windows.first!) { response in
                 switch response {
                 case .alertFirstButtonReturn:

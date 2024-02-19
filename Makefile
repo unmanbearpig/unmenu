@@ -6,8 +6,7 @@ fuzzylib:
 	cd fuzzylib && cargo build --release && cp target/release/libfuzzylib.a ../mac-app/
 
 mac-app: fuzzylib
-	# not sure if we need build at the end
-	cd mac-app && xcodebuild -project dmenu-unmacbp.xcodeproj -scheme dmenu-unmacbp -derivedDataPath ../build build
+	cd mac-app && xcodebuild -project unmenu.xcodeproj -scheme unmenu -derivedDataPath ../build build
 
 clean:
 	cd fuzzylib && cargo clean
