@@ -1,8 +1,8 @@
 //
 //  FuzzyMatcher.swift
-//  dmenu-mac
+//  unmenu
 //
-//  Created by Ivan on 17.06.23.
+//  Copyright © 2024 Ivan <unmanbearpig@gmail.com>. All rights reserved.
 //  Copyright © 2023 Jose Pereira. All rights reserved.
 //
 

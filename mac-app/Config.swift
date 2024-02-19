@@ -1,8 +1,8 @@
 //
 //  Config.swift
-//  dmenu-mac
+//  unmenu
 //
-//  Created by Ivan on 14.02.24.
+//  Copyright © 2024 Ivan <unmanbearpig@gmail.com>. All rights reserved.
 //  Copyright © 2024 Jose Pereira. All rights reserved.
 //
 

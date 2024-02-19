@@ -82,7 +82,7 @@ fn open_application(app_path: &str) -> Result<(), Error> {
 
 type Error = Box<dyn std::error::Error>;
 
-// See dmenu-unmacbp Config.swift file
+// See unmenu Config.swift file
 #[derive(Debug, Clone, Serialize, Deserialize)]
 struct Hotkey {
     qwerty_hotkey: Option<String>,
@@ -117,7 +117,7 @@ impl Default for Config {
             .collect();
 
         let ignore_names = vec![
-            "dmenu-mac.app",
+            "unmenu.app",
             ".Karabiner-VirtualHIDDevice-Manager.app", "Install Command Line Developer Tools.app",
             "Install in Progress.app", "Migration Assistant.app", "TextInputMenuAgent.app",
             "TextInputSwitcher.app", "AOSUIPrefPaneLauncher.app",
@@ -188,7 +188,7 @@ impl Config {
     fn get_file_path() -> Result<PathBuf, Error> {
         let home_dir = std::env::var("HOME")
             .map_err(|_| "Failed to get home directory")?;
-        let path = format!("{}/.config/dmenu/config.toml", home_dir);
+        let path = format!("{}/.config/unmenu/config.toml", home_dir);
         let path_path = Path::new(&path);
         return Ok(path_path.to_path_buf())
     }

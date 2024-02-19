@@ -24,6 +24,6 @@ toml = "0.7.5"
 crate-type = ["staticlib"]
 
 [[bin]]
-name = "dmenu-cli"
+name = "unmenu"
 path = "src/main.rs"
 

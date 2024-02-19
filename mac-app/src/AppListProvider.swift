@@ -44,7 +44,7 @@ class AppListProvider: ListProvider {
         // appDirDict[systemApplicationDir] = true
         // appDirDict["/System/Applications/Utilities/"] = true
         // appDirDict["/System/Library/CoreServices/"] = false
-        // let customDir = (FileManager.default.homeDirectoryForCurrentUser).appendingPathComponent(".dmenu-bin/").path
+        // let customDir = (FileManager.default.homeDirectoryForCurrentUser).appendingPathComponent(".unmenu-bin/").path
         // log("customDir = \(customDir)")
         // appDirDict[customDir] = true
 //

@@ -122,7 +122,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         // Read config and hotkeys
         let fileManager = FileManager.default
         let homeDir = fileManager.homeDirectoryForCurrentUser
-        let confPath = homeDir.appendingPathComponent(".config/dmenu/config.toml")
+        let confPath = homeDir.appendingPathComponent(".config/unmenu/config.toml")
                 
         if let config = Config(tomlFilePath: String(confPath.path)) {
             if let kc = config.hotkeyCode, let mf = config.hotkeyModifierFlags {
