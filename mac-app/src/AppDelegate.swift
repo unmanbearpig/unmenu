@@ -68,6 +68,24 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         return accessEnabled
     }
     
+    func restartOurselves() {
+        log("restarting...")
+        
+        // let path = (Bundle.main.resourcePath! as NSString).stringByDeletingLastPathComponent.stringByDeletingLastPathComponent
+        let url = URL(fileURLWithPath: Bundle.main.resourcePath!)
+        var newUrl = url.deletingLastPathComponent()
+        newUrl = newUrl.deletingLastPathComponent()
+        let path = newUrl.path
+        
+        log("path = \(path)")
+        
+        let task = Process()
+        task.launchPath = "/usr/bin/open"
+        task.arguments = [path]
+        task.launch()
+        exit(0)
+    }
+    
     func waitForPermissions() {
         let accessEnabled = doWeHavePermissions()
         if !accessEnabled {
@@ -81,13 +99,19 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
             // we got the permissions
             let alert = NSAlert()
             alert.messageText = "Permissions granted"
-            alert.informativeText = "Thank you for granting the necessary permissions."
+            alert.informativeText = "App restart required to apply new permissions. After clicking Continue, use your designated hotkey or the default (cmd-ctrl-b) if unchanged."
             alert.addButton(withTitle: "Continue")
-            alert.beginSheetModal(for: NSApp.windows.first!)
-
+            alert.beginSheetModal(for: NSApp.windows.first!) { response in
+                switch response {
+                case .alertFirstButtonReturn:
+                    self.restartOurselves()
+                default:
+                    return
+                }
+            }
         }
     }
-
+    
     func setupHotkeyHandler() {
         let alert = NSAlert()
         

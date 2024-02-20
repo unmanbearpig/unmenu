@@ -3,6 +3,7 @@
 /mac-app//*.xcarchive
 /mac-app//*.zip
 /mac-app/build
+/mac-app/DerivedData
 /mac-app/libfuzzylib.dylib
 /fuzzylib/target
 /fuzzylib/Cargo.lock

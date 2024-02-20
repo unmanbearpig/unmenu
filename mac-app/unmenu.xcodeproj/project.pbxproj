@@ -12,6 +12,7 @@
 		2C3079C52B7D0FB7002487E3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3079C42B7D0FB7002487E3 /* Config.swift */; };
 		2C3079C72B7D4EEC002487E3 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3079C62B7D4EEC002487E3 /* Keys.swift */; };
 		2CC637A22B7BCA1F00BCAF02 /* libfuzzylib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC637A12B7BCA1F00BCAF02 /* libfuzzylib.a */; };
+		2CF6C41C2B84C01800B15C3E /* default_config.toml in Resources */ = {isa = PBXBuildFile; fileRef = 2CF6C41A2B83D96300B15C3E /* default_config.toml */; };
 		7F25568F269CF945002324AC /* CommandArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F25568E269CF945002324AC /* CommandArguments.swift */; };
 		7F255692269CF988002324AC /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 7F255691269CF988002324AC /* ArgumentParser */; };
 		7F255694269D01FF002324AC /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F255693269D01FF002324AC /* InputField.swift */; };
@@ -42,6 +43,7 @@
 		2C3079DD2B7E1E59002487E3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2C6617142A3DAD5C008C5A1E /* libfuzzylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libfuzzylib.h; sourceTree = "<group>"; };
 		2CC637A12B7BCA1F00BCAF02 /* libfuzzylib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfuzzylib.a; path = ../fuzzylib/target/release/libfuzzylib.a; sourceTree = "<group>"; };
+		2CF6C41A2B83D96300B15C3E /* default_config.toml */ = {isa = PBXFileReference; lastKnownFileType = text; path = default_config.toml; sourceTree = "<group>"; };
 		7F25568E269CF945002324AC /* CommandArguments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CommandArguments.swift; path = src/CommandArguments.swift; sourceTree = "<group>"; };
 		7F255693269D01FF002324AC /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InputField.swift; path = src/InputField.swift; sourceTree = "<group>"; };
 		7F2CCA22268B195F00C14B29 /* Notification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Notification+Name.swift"; path = "src/Notification+Name.swift"; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		7F3278E71C71C96100AFB227 /* unmenu */ = {
 			isa = PBXGroup;
 			children = (
+				2CF6C41A2B83D96300B15C3E /* default_config.toml */,
 				7F6511F829A619FD007D3EB3 /* src */,
 				7F3278E91C71C9CE00AFB227 /* Assets.xcassets */,
 				7F3278FA1C71CA0200AFB227 /* Base.lproj */,
@@ -241,6 +244,7 @@
 				7F90D2D226FDE2400003EC7E /* unmenu in Resources */,
 				7F5D0E2C1CACCDD400268983 /* Main.storyboard in Resources */,
 				7F3278F11C71C9CE00AFB227 /* Assets.xcassets in Resources */,
+				2CF6C41C2B84C01800B15C3E /* default_config.toml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

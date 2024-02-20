@@ -75,5 +75,37 @@ class Config {
         }
 
     }
+    
+    static func createDefaultConfig() {
+        log("creating default config")
+        let maybeDefaultConfigURL = Bundle.main.url(forResource: "default_config", withExtension: "toml")
+        if maybeDefaultConfigURL == nil {
+            log("couldn't find default_config.toml in the bundle")
+            exit(1)
+            return
+        }
+        
+        let defaultConfigURL = maybeDefaultConfigURL!
+        log("default config bundle url = \(defaultConfigURL)")
+        let directoryURL = FileManager.default.homeDirectoryForCurrentUser.appendingPathComponent(".config/unmenu")
+        let destinationURL = directoryURL.appendingPathComponent("config.toml")
+        
+        if !FileManager.default.fileExists(atPath: directoryURL.path) {
+            log("creating config directory")
+            try! FileManager.default.createDirectory(at: directoryURL, withIntermediateDirectories: true)
+        }
+        
+        if !FileManager.default.fileExists(atPath: destinationURL.path) {
+            log("file doesn't exist")
+            
+            do {
+                try FileManager.default.copyItem(at: defaultConfigURL, to: destinationURL)
+                print("Copied default config to ~/.config/unmenu/config.toml")
+            } catch {
+                print("Failed to copy config file: \(error)")
+            }
+            log("created default config")
+        }
+    }
 }
 

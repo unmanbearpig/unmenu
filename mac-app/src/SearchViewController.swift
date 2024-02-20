@@ -56,6 +56,9 @@ class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDeleg
 
     override func viewDidLoad() {
         log("-> SearchViewController.viewDidLoad")
+        
+        Config.createDefaultConfig()
+        
         fuzzyMatcher?.rescan()
         super.viewDidLoad()
         searchText.delegate = self
