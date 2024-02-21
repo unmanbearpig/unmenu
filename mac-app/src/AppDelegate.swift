@@ -230,7 +230,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
 
         if let button = statusItem.button {
-            button.title = "d"
+            button.title = "_"
         }
 
         self.setupHotkeyHandler()
