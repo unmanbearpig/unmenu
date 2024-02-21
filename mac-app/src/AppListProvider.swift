@@ -16,7 +16,6 @@
  */
 
 import Foundation
-import FileWatcher
 import Cocoa
 
 
@@ -53,29 +52,8 @@ class AppListProvider: ListProvider {
         // updateAppList()
     }
 
-    func initFileWatch(_ dirs: [String]) {
-        let filewatcher = FileWatcher(dirs)
-        filewatcher.callback = {_ in
-            self.updateAppList()
-        }
-        filewatcher.start()
-    }
-
     func get() -> [ListItem] {
         return appList.map({ListItem(name: $0.deletingPathExtension().lastPathComponent, data: $0)})
-    }
-
-    func updateAppList() {
-        var newAppList = [URL]()
-        appDirDict.keys.forEach { path in
-            let urlPath = URL(fileURLWithPath: path, isDirectory: true)
-            log("-----------------\npath = \(path) urlPath = \(urlPath)")
-
-            let list = getAppList(urlPath, recursive: appDirDict[path]!)
-            log("app list = \(list)\n-------------------------\n\n")
-            newAppList.append(contentsOf: list)
-        }
-        appList = newAppList
     }
 
     func isDir(path: String) -> Bool {

@@ -195,7 +195,9 @@ impl Config {
 
     fn read_file() -> Result<Config, Error> {
         let path = Config::get_file_path()?;
+        eprintln!("fuzzylib: config path: {path:?}");
         if !path.exists() {
+            eprintln!("fuzzylib: config file doesn't exist");
             return Ok(Config::default())
         }
 
@@ -208,6 +210,8 @@ impl Config {
 
         let config: Config = toml::from_str(&contents)
             .map_err(|e| format!("Failed to parse TOML: {}", e))?;
+
+        eprintln!("fuzzylib: loaded config file");
 
         Ok(config)
     }

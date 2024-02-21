@@ -171,6 +171,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
             if event.keyCode == keyCode && devIndFlags == modifierFlags {
                 log("   matched keycode = \(event.keyCode) flags = // \(event.modifierFlags.rawValue) win \(event.windowNumber) // \(event.window)")
                 self.showAppWindow()
+            } else {
+                log("   not matched key. \(event.keyCode) is not expected \(keyCode); or \(devIndFlags) is not expected \(event.modifierFlags.rawValue)")
             }
         }
 

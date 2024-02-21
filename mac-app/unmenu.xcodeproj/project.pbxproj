@@ -186,7 +186,7 @@
 				7FA29F6B29A55B0B00B27359 /* LaunchAtLogin */,
 				2C3079C22B7D0EC6002487E3 /* TOMLDecoder */,
 			);
-			productName = "dmenu-mac";
+			productName = "unmenu";
 			productReference = 7FE8A6481C717481000A2C4C /* unmenu.app */;
 			productType = "com.apple.product-type.application";
 		};
