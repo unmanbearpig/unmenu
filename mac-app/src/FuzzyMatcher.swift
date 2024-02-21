@@ -3,7 +3,6 @@
 //  unmenu
 //
 //  Copyright © 2024 Ivan <unmanbearpig@gmail.com>. All rights reserved.
-//  Copyright © 2023 Jose Pereira. All rights reserved.
 //
 
 import Foundation
