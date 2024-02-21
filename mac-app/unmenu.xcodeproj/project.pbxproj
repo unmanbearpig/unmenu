@@ -16,7 +16,6 @@
 		7F25568F269CF945002324AC /* CommandArguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F25568E269CF945002324AC /* CommandArguments.swift */; };
 		7F255692269CF988002324AC /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 7F255691269CF988002324AC /* ArgumentParser */; };
 		7F255694269D01FF002324AC /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F255693269D01FF002324AC /* InputField.swift */; };
-		7F2CCA1E268B10F700C14B29 /* FileWatcher in Frameworks */ = {isa = PBXBuildFile; productRef = 7F2CCA1D268B10F700C14B29 /* FileWatcher */; };
 		7F2CCA23268B195F00C14B29 /* Notification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2CCA22268B195F00C14B29 /* Notification+Name.swift */; };
 		7F2CCA2E268FE37900C14B29 /* ListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2CCA2D268FE37900C14B29 /* ListProvider.swift */; };
 		7F2CCA30268FE38C00C14B29 /* AppListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2CCA2F268FE38C00C14B29 /* AppListProvider.swift */; };
@@ -72,7 +71,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CC637A22B7BCA1F00BCAF02 /* libfuzzylib.a in Frameworks */,
-				7F2CCA1E268B10F700C14B29 /* FileWatcher in Frameworks */,
 				7F255692269CF988002324AC /* ArgumentParser in Frameworks */,
 				7FA29F6C29A55B0B00B27359 /* LaunchAtLogin in Frameworks */,
 				2C3079C32B7D0EC6002487E3 /* TOMLDecoder in Frameworks */,
@@ -184,7 +182,6 @@
 			);
 			name = unmenu;
 			packageProductDependencies = (
-				7F2CCA1D268B10F700C14B29 /* FileWatcher */,
 				7F255691269CF988002324AC /* ArgumentParser */,
 				7FA29F6B29A55B0B00B27359 /* LaunchAtLogin */,
 				2C3079C22B7D0EC6002487E3 /* TOMLDecoder */,
@@ -601,11 +598,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7F255690269CF988002324AC /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
 			productName = ArgumentParser;
-		};
-		7F2CCA1D268B10F700C14B29 /* FileWatcher */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 7F2CCA1C268B10F700C14B29 /* XCRemoteSwiftPackageReference "FileWatcher" */;
-			productName = FileWatcher;
 		};
 		7FA29F6B29A55B0B00B27359 /* LaunchAtLogin */ = {
 			isa = XCSwiftPackageProductDependency;
