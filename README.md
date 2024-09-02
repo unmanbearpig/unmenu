@@ -17,14 +17,20 @@ This repository is a fork of dmenu-mac (https://github.com/oNaiPs/dmenu-mac), en
 This step requires Rust installed
 
 ```
-cd fuzzylib
-cargo build --release
-cp target/release/libfuzzylib.a ../mac-app/
+cargo build --release --manifest-path=fuzzylib/Cargo.toml
+cp fuzzylib/target/release/libfuzzylib.a mac-app/
 ```
 
 2. Build macOS application:
 Requires Xcode
 
+CLI:
+xcodebuild -project mac-app/unmenu.xcodeproj -scheme unmenu -derivedDataPath build -configuration Release build
+cp -r build/Build/Products/Release/unmenu.app /Applications/
+
+OR
+
+GUI:
  - open mac-app/unmenu.xcodeproj
  - Click the menu item Product -> Archive
  - Right click on the archive called `unmenu` and `Show in Finder`
@@ -33,7 +39,7 @@ Requires Xcode
 
 # Getting started
 
-1. Launch the app
+1. Launch the app `open -a unmenu`
 2. Follow instructions to enable permissions
 3. Hit Ctrl-Cmd-b by deafult
 4. Customize settings by editing ~/.config/unmenu/config.toml according to your preferences
