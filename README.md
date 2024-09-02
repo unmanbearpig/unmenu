@@ -13,6 +13,12 @@ This repository is a fork of dmenu-mac (https://github.com/oNaiPs/dmenu-mac), en
 
 # Building
 
+```sh
+make
+```
+
+Or `make install` to copy the app into /Applications
+
 1. Build fuzzylib
 This step requires Rust installed
 
@@ -25,8 +31,10 @@ cp fuzzylib/target/release/libfuzzylib.a mac-app/
 Requires Xcode
 
 CLI:
+```
 xcodebuild -project mac-app/unmenu.xcodeproj -scheme unmenu -derivedDataPath build -configuration Release build
-cp -r build/Build/Products/Release/unmenu.app /Applications/
+cp -r mac-app/Build/Products/Release/unmenu.app /Applications/
+```
 
 OR
 
