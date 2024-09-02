@@ -3,10 +3,14 @@
 all: mac-app
 
 fuzzylib:
-	cd fuzzylib && cargo build --release && cp target/release/libfuzzylib.a ../mac-app/
+	cargo build --release --manifest-path=fuzzylib/Cargo.toml
+	cp fuzzylib/target/release/libfuzzylib.a mac-app/
 
 mac-app: fuzzylib
-	cd mac-app && xcodebuild -project unmenu.xcodeproj -scheme unmenu -derivedDataPath ../build build
+	xcodebuild -project mac-app/unmenu.xcodeproj -scheme unmenu -derivedDataPath build -configuration Release build
+
+install: mac-app
+	cp -r mac-app/Build/Products/Release/unmenu.app /Applications/
 
 clean:
 	cd fuzzylib && cargo clean
