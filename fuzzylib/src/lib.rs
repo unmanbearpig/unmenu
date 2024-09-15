@@ -373,8 +373,10 @@ impl Matcher {
         false
     }
 
-    fn scan_dir(&mut self, dir: &Path) {
-        eprintln!("reading directory {dir:?}");
+    fn scan_dir(&mut self, orig_dir: &Path) {
+        eprintln!("reading directory {orig_dir:?}");
+        let dir = &orig_dir.canonicalize().expect("Couldn't canonicalize dir path {orig_dir:?}");
+
         let dir_items = std::fs::read_dir(dir);
         if let Err(err) = dir_items {
             eprintln!("Could not read dir {dir:?}: {err:?}");
