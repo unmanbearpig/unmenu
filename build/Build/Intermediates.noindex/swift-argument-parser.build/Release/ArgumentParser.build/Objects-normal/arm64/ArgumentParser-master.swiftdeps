@@ -1,0 +1,59 @@
+version: "Apple Swift version 6.0 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)"
+options: "11ba5c8d614c5bce78dd23700846091166b3e8de60c38512ef50cee618769808"
+build_start_time: [1726851793, 691626000]
+build_end_time: [1726851803, 398309000]
+inputs:
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/BashCompletionsGenerator.swift"
+  : [1726851787, 898313321]
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/CompletionsGenerator.swift"
+  : [1726851787, 898402651]
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/FishCompletionsGenerator.swift"
+  : [1726851787, 898499563]
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/ZshCompletionsGenerator.swift"
+  : [1726851787, 898582310]
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Argument.swift"
+  : [1726851787, 898691514]
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/ArgumentHelp.swift"
+  : [1726851787, 898767552]
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/CompletionKind.swift"
+  : [1726851787, 898818633]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Errors.swift": [1726851787, 899050499]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Flag.swift": [1726851787, 899144953]
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/NameSpecification.swift"
+  : [1726851787, 899240116]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Option.swift": [1726851787, 899372735]
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/OptionGroup.swift"
+  : [1726851787, 899453898]
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/CommandConfiguration.swift"
+  : [1726851787, 899557227]
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/EnumerableFlag.swift"
+  : [1726851787, 899615725]
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ExpressibleByArgument.swift"
+  : [1726851787, 899672639]
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableArguments.swift"
+  : [1726851787, 899767344]
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableArgumentsValidation.swift"
+  : [1726851787, 899852924]
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableCommand.swift"
+  : [1726851787, 899923337]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDecoder.swift": [1726851787, 900027208]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDefinition.swift": [1726851787, 900130537]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentSet.swift": [1726851787, 900215450]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/CommandParser.swift": [1726851787, 900319237]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/InputOrigin.swift": [1726851787, 900378026]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Name.swift": [1726851787, 900434732]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Parsed.swift": [1726851787, 900705471]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParsedValues.swift": [1726851787, 900798884]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParserError.swift": [1726851787, 900864340]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/SplitArguments.swift": [1726851787, 901016417]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/DumpHelpGenerator.swift": [1726851787, 901160994]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpCommand.swift": [1726851787, 901224658]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpGenerator.swift": [1726851787, 901447690]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/MessageInfo.swift": [1726851787, 901535020]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/UsageGenerator.swift": [1726851787, 901684180]
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/CollectionExtensions.swift"
+  : [1726851787, 901789051]
+  ? "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/SequenceExtensions.swift"
+  : [1726851787, 901846757]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/StringExtensions.swift": [1726851787, 902041290]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/Tree.swift": [1726851787, 902112454]

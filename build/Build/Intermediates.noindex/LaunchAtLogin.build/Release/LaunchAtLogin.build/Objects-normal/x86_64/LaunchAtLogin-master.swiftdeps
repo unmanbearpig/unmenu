@@ -1,0 +1,9 @@
+version: "Apple Swift version 6.0 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)"
+options: "fe70685c320adaf0fabdfa9bb58c04be6a59ee84eac59ed20532c01b005997b6"
+build_start_time: [1726851792, 579661000]
+build_end_time: [1726851798, 320186000]
+inputs:
+  ? "/Users/alex/unmenu/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/DerivedSources/resource_bundle_accessor.swift"
+  : [1726851790, 865956967]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/LaunchAtLogin/Sources/LaunchAtLogin/LaunchAtLogin.swift": [1726851787, 796975173]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/LaunchAtLogin/Sources/LaunchAtLogin/Toggle.swift": [1726851787, 809163540]

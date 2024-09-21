@@ -1,0 +1,21 @@
+version: "Apple Swift version 6.0 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)"
+options: "ebd61ebaf66628f0ae7d590be464bba4446b19e50fb28f632feec776c5e7868f"
+build_start_time: [1726851803, 424471000]
+build_end_time: [1726851811, 68521000]
+inputs:
+  ? "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/DerivedSources/GeneratedAssetSymbols.swift"
+  : [1726851803, 418412028]
+  "/Users/alex/unmenu/mac-app/Config.swift": [1726851473, 651332240]
+  "/Users/alex/unmenu/mac-app/Keys.swift": [1726851473, 651468692]
+  "/Users/alex/unmenu/mac-app/src/AppDelegate.swift": [1726851473, 652937964]
+  "/Users/alex/unmenu/mac-app/src/AppListProvider.swift": [1726851473, 653020003]
+  "/Users/alex/unmenu/mac-app/src/CommandArguments.swift": [1726851473, 653562980]
+  "/Users/alex/unmenu/mac-app/src/FuzzyMatcher.swift": [1726851473, 653628727]
+  "/Users/alex/unmenu/mac-app/src/InputField.swift": [1726851473, 653739056]
+  "/Users/alex/unmenu/mac-app/src/ListProvider.swift": [1726851473, 653795054]
+  "/Users/alex/unmenu/mac-app/src/Notification+Name.swift": [1726851473, 653843718]
+  "/Users/alex/unmenu/mac-app/src/PipeListProvider.swift": [1726851473, 653893966]
+  "/Users/alex/unmenu/mac-app/src/ResultsView.swift": [1726851473, 654046793]
+  "/Users/alex/unmenu/mac-app/src/SearchViewController.swift": [1726851473, 654119582]
+  "/Users/alex/unmenu/mac-app/src/SearchWindow.swift": [1726851473, 654189662]
+  "/Users/alex/unmenu/mac-app/src/VerticalAlignedTextFieldCell.swift": [1726851473, 654319157]

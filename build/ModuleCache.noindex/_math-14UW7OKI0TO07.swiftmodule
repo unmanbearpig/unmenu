@@ -1,0 +1,16 @@
+---
+path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/15.0/_math.swiftmodule/x86_64-apple-macos.swiftmodule'
+dependencies:
+  - mtime:           1726336633000000000
+    path:            '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/15.0/_math.swiftmodule/x86_64-apple-macos.swiftmodule'
+    size:            88664
+  - mtime:           1722714743000000000
+    path:            'usr/lib/swift/Swift.swiftmodule/x86_64-apple-macos.swiftinterface'
+    size:            2035138
+    sdk_relative:    true
+  - mtime:           1722715970000000000
+    path:            'usr/lib/swift/_math.swiftmodule/x86_64-apple-macos.swiftinterface'
+    size:            24001
+    sdk_relative:    true
+version:         1
+...

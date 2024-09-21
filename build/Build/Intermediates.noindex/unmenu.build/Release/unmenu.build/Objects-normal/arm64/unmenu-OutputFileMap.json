@@ -1,0 +1,85 @@
+{
+  "" : {
+    "const-values" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/unmenu-master.swiftconstvalues",
+    "dependencies" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/unmenu-master.d",
+    "diagnostics" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/unmenu-master.dia",
+    "emit-module-dependencies" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/unmenu-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/unmenu-master-emit-module.dia",
+    "swift-dependencies" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/unmenu-master.swiftdeps"
+  },
+  "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/unmenu.build/Release/unmenu.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  },
+  "/Users/alex/unmenu/mac-app/Config.swift" : {
+    "index-unit-output-path" : "/unmenu.build/Release/unmenu.build/Objects-normal/arm64/Config.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/Config.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/Config.o"
+  },
+  "/Users/alex/unmenu/mac-app/Keys.swift" : {
+    "index-unit-output-path" : "/unmenu.build/Release/unmenu.build/Objects-normal/arm64/Keys.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/Keys.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/Keys.o"
+  },
+  "/Users/alex/unmenu/mac-app/src/AppDelegate.swift" : {
+    "index-unit-output-path" : "/unmenu.build/Release/unmenu.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/AppDelegate.o"
+  },
+  "/Users/alex/unmenu/mac-app/src/AppListProvider.swift" : {
+    "index-unit-output-path" : "/unmenu.build/Release/unmenu.build/Objects-normal/arm64/AppListProvider.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/AppListProvider.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/AppListProvider.o"
+  },
+  "/Users/alex/unmenu/mac-app/src/CommandArguments.swift" : {
+    "index-unit-output-path" : "/unmenu.build/Release/unmenu.build/Objects-normal/arm64/CommandArguments.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/CommandArguments.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/CommandArguments.o"
+  },
+  "/Users/alex/unmenu/mac-app/src/FuzzyMatcher.swift" : {
+    "index-unit-output-path" : "/unmenu.build/Release/unmenu.build/Objects-normal/arm64/FuzzyMatcher.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/FuzzyMatcher.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/FuzzyMatcher.o"
+  },
+  "/Users/alex/unmenu/mac-app/src/InputField.swift" : {
+    "index-unit-output-path" : "/unmenu.build/Release/unmenu.build/Objects-normal/arm64/InputField.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/InputField.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/InputField.o"
+  },
+  "/Users/alex/unmenu/mac-app/src/ListProvider.swift" : {
+    "index-unit-output-path" : "/unmenu.build/Release/unmenu.build/Objects-normal/arm64/ListProvider.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/ListProvider.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/ListProvider.o"
+  },
+  "/Users/alex/unmenu/mac-app/src/Notification+Name.swift" : {
+    "index-unit-output-path" : "/unmenu.build/Release/unmenu.build/Objects-normal/arm64/Notification+Name.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/Notification+Name.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/Notification+Name.o"
+  },
+  "/Users/alex/unmenu/mac-app/src/PipeListProvider.swift" : {
+    "index-unit-output-path" : "/unmenu.build/Release/unmenu.build/Objects-normal/arm64/PipeListProvider.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/PipeListProvider.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/PipeListProvider.o"
+  },
+  "/Users/alex/unmenu/mac-app/src/ResultsView.swift" : {
+    "index-unit-output-path" : "/unmenu.build/Release/unmenu.build/Objects-normal/arm64/ResultsView.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/ResultsView.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/ResultsView.o"
+  },
+  "/Users/alex/unmenu/mac-app/src/SearchViewController.swift" : {
+    "index-unit-output-path" : "/unmenu.build/Release/unmenu.build/Objects-normal/arm64/SearchViewController.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/SearchViewController.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/SearchViewController.o"
+  },
+  "/Users/alex/unmenu/mac-app/src/SearchWindow.swift" : {
+    "index-unit-output-path" : "/unmenu.build/Release/unmenu.build/Objects-normal/arm64/SearchWindow.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/SearchWindow.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/SearchWindow.o"
+  },
+  "/Users/alex/unmenu/mac-app/src/VerticalAlignedTextFieldCell.swift" : {
+    "index-unit-output-path" : "/unmenu.build/Release/unmenu.build/Objects-normal/arm64/VerticalAlignedTextFieldCell.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/VerticalAlignedTextFieldCell.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/unmenu.build/Release/unmenu.build/Objects-normal/arm64/VerticalAlignedTextFieldCell.o"
+  }
+}

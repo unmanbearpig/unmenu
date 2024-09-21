@@ -1,0 +1,37 @@
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/BashCompletionsGenerator.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/CompletionsGenerator.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/FishCompletionsGenerator.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/ZshCompletionsGenerator.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/Argument.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/ArgumentHelp.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/CompletionKind.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/Errors.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/Flag.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/NameSpecification.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/Option.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Properties/OptionGroup.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Types/CommandConfiguration.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Types/EnumerableFlag.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Types/ExpressibleByArgument.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Types/ParsableArguments.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Types/ParsableArgumentsValidation.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable\ Types/ParsableCommand.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDecoder.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDefinition.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentSet.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/CommandParser.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/InputOrigin.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Name.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Parsed.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParsedValues.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParserError.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/SplitArguments.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/DumpHelpGenerator.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpCommand.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpGenerator.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/MessageInfo.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/UsageGenerator.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/CollectionExtensions.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/SequenceExtensions.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/StringExtensions.swift
+/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/Tree.swift

@@ -1,0 +1,9 @@
+"/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/BashCompletionsGenerator.swift":
+  swiftmodule: "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentParser.swiftmodule"
+  dependencies: "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentParser-master.d"
+  swiftsourceinfo: "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentParser.swiftsourceinfo"
+  swiftdoc: "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentParser.swiftdoc"
+  objc-header: "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentParser-Swift.h"
+  diagnostics: "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentParser-master.dia"
+  abi-baseline-json: "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentParser.abi.json"
+  const-values: "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentParser-master.swiftconstvalues"

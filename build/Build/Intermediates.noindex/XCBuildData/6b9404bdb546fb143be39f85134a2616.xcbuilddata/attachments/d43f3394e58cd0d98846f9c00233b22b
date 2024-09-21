@@ -1,0 +1,25 @@
+{
+  "" : {
+    "const-values" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin-master.swiftconstvalues",
+    "dependencies" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin-master.d",
+    "diagnostics" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin-master.dia",
+    "emit-module-dependencies" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin-master-emit-module.dia",
+    "swift-dependencies" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin-master.swiftdeps"
+  },
+  "/Users/alex/unmenu/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/DerivedSources/resource_bundle_accessor.swift" : {
+    "index-unit-output-path" : "/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/resource_bundle_accessor.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/resource_bundle_accessor.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/resource_bundle_accessor.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/LaunchAtLogin/Sources/LaunchAtLogin/LaunchAtLogin.swift" : {
+    "index-unit-output-path" : "/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/LaunchAtLogin/Sources/LaunchAtLogin/Toggle.swift" : {
+    "index-unit-output-path" : "/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/Toggle.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/Toggle.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/Toggle.o"
+  }
+}

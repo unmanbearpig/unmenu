@@ -1,0 +1,13 @@
+version: "Apple Swift version 6.0 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)"
+options: "8ffeace7e60163f43bbb193a302a70e37f29f5b26f00f71dbc528d2ffd5a1712"
+build_start_time: [1726851798, 675884000]
+build_end_time: [1726851800, 292113000]
+inputs:
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/TOMLDecoder/Sources/TOMLDecoder/DecodingError+Extensions.swift": [1726851787, 723671980]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/TOMLDecoder/Sources/TOMLDecoder/KeyDecodingStrategy.swift": [1726851787, 723740852]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/TOMLDecoder/Sources/TOMLDecoder/TOMLDecoder.swift": [1726851787, 723838806]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/TOMLDecoder/Sources/TOMLDecoder/TOMLDecoderImpl.swift": [1726851787, 724006050]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/TOMLDecoder/Sources/TOMLDecoder/TOMLDecodingStorage.swift": [1726851787, 724061755]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/TOMLDecoder/Sources/TOMLDecoder/TOMLKey.swift": [1726851787, 724108795]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/TOMLDecoder/Sources/TOMLDecoder/TOMLKeyedDecodingContainer.swift": [1726851787, 724211291]
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/TOMLDecoder/Sources/TOMLDecoder/TOMLUnkeyedDecodingContainer.swift": [1726851787, 724288079]

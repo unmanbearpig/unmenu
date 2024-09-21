@@ -7,6 +7,5 @@
 /mac-app/libfuzzylib.dylib
 /mac-app/libfuzzylib.a
 /fuzzylib/target
-/fuzzylib/Cargo.lock
 .DS_Store
 /mac-app/.DS_Store

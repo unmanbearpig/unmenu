@@ -1,0 +1,195 @@
+{
+  "" : {
+    "const-values" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentParser-master.swiftconstvalues",
+    "dependencies" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentParser-master.d",
+    "diagnostics" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentParser-master.dia",
+    "emit-module-dependencies" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentParser-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentParser-master-emit-module.dia",
+    "swift-dependencies" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentParser-master.swiftdeps"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/BashCompletionsGenerator.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/BashCompletionsGenerator.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/BashCompletionsGenerator.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/BashCompletionsGenerator.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/CompletionsGenerator.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/CompletionsGenerator.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/CompletionsGenerator.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/CompletionsGenerator.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/FishCompletionsGenerator.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/FishCompletionsGenerator.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/FishCompletionsGenerator.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/FishCompletionsGenerator.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Completions/ZshCompletionsGenerator.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ZshCompletionsGenerator.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ZshCompletionsGenerator.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ZshCompletionsGenerator.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Argument.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Argument.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Argument.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Argument.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/ArgumentHelp.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentHelp.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentHelp.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentHelp.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/CompletionKind.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/CompletionKind.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/CompletionKind.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/CompletionKind.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Errors.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Errors.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Errors.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Errors.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Flag.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Flag.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Flag.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Flag.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/NameSpecification.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/NameSpecification.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/NameSpecification.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/NameSpecification.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/Option.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Option.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Option.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Option.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/OptionGroup.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/OptionGroup.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/OptionGroup.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/OptionGroup.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/CommandConfiguration.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/CommandConfiguration.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/CommandConfiguration.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/CommandConfiguration.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/EnumerableFlag.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/EnumerableFlag.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/EnumerableFlag.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/EnumerableFlag.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ExpressibleByArgument.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ExpressibleByArgument.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ExpressibleByArgument.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ExpressibleByArgument.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableArguments.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ParsableArguments.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ParsableArguments.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ParsableArguments.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableArgumentsValidation.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ParsableArgumentsValidation.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ParsableArgumentsValidation.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ParsableArgumentsValidation.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableCommand.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ParsableCommand.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ParsableCommand.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ParsableCommand.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDecoder.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentDecoder.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentDecoder.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentDecoder.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentDefinition.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentDefinition.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentDefinition.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentDefinition.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ArgumentSet.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentSet.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentSet.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ArgumentSet.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/CommandParser.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/CommandParser.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/CommandParser.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/CommandParser.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/InputOrigin.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/InputOrigin.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/InputOrigin.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/InputOrigin.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Name.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Name.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Name.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Name.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/Parsed.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Parsed.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Parsed.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Parsed.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParsedValues.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ParsedValues.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ParsedValues.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ParsedValues.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/ParserError.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ParserError.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ParserError.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/ParserError.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsing/SplitArguments.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/SplitArguments.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/SplitArguments.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/SplitArguments.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/DumpHelpGenerator.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/DumpHelpGenerator.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/DumpHelpGenerator.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/DumpHelpGenerator.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpCommand.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/HelpCommand.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/HelpCommand.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/HelpCommand.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/HelpGenerator.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/HelpGenerator.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/HelpGenerator.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/HelpGenerator.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/MessageInfo.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/MessageInfo.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/MessageInfo.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/MessageInfo.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Usage/UsageGenerator.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/UsageGenerator.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/UsageGenerator.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/UsageGenerator.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/CollectionExtensions.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/CollectionExtensions.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/CollectionExtensions.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/CollectionExtensions.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/SequenceExtensions.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/SequenceExtensions.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/SequenceExtensions.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/SequenceExtensions.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/StringExtensions.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/StringExtensions.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/StringExtensions.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/StringExtensions.o"
+  },
+  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParser/Utilities/Tree.swift" : {
+    "index-unit-output-path" : "/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Tree.o",
+    "llvm-bc" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Tree.bc",
+    "object" : "/Users/alex/unmenu/build/Build/Intermediates.noindex/swift-argument-parser.build/Release/ArgumentParser.build/Objects-normal/arm64/Tree.o"
+  }
+}
