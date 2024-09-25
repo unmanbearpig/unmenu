@@ -1,4 +1,0 @@
-module ArgumentParser {
-header "ArgumentParser-Swift.h"
-export *
-}

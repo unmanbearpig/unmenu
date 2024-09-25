@@ -1,4 +1,0 @@
-module TOMLDecoder {
-header "TOMLDecoder-Swift.h"
-export *
-}

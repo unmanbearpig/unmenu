@@ -1,4 +1,0 @@
-module ArgumentParserToolInfo {
-header "ArgumentParserToolInfo-Swift.h"
-export *
-}

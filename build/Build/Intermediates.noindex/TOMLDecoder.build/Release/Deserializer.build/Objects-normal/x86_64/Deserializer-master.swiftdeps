@@ -1,9 +1,0 @@
-version: "Apple Swift version 6.0 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)"
-options: "3e737578a5c54137f17dc885a0d94f2424fb38338420614d1d554f23640c4278"
-build_start_time: [1726851792, 579929000]
-build_end_time: [1726851798, 687670000]
-inputs:
-  "/Users/alex/unmenu/build/SourcePackages/checkouts/TOMLDecoder/Sources/Deserializer/DeserializationError.swift": [1726851787, 723352827]
-  "/Users/alex/unmenu/build/SourcePackages/checkouts/TOMLDecoder/Sources/Deserializer/Parser.swift": [1726851787, 723461697]
-  "/Users/alex/unmenu/build/SourcePackages/checkouts/TOMLDecoder/Sources/Deserializer/TOMLDeserializer.swift": [1726851787, 723533111]
-  "/Users/alex/unmenu/build/SourcePackages/checkouts/TOMLDecoder/Sources/Deserializer/Traced.swift": [1726851787, 723577276]

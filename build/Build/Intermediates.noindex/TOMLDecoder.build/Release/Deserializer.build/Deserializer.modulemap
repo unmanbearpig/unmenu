@@ -1,4 +1,0 @@
-module Deserializer {
-header "Deserializer-Swift.h"
-export *
-}

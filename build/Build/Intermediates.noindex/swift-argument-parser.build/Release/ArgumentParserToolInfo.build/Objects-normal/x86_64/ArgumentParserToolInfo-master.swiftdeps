@@ -1,6 +1,0 @@
-version: "Apple Swift version 6.0 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)"
-options: "4819039ed2702d1fd9e6722cde790e15aad287daf8d00e405e2a93215abb2ede"
-build_start_time: [1726851792, 579181000]
-build_end_time: [1726851793, 721930000]
-inputs:
-  "/Users/alex/unmenu/build/SourcePackages/checkouts/swift-argument-parser/Sources/ArgumentParserToolInfo/ToolInfo.swift": [1726851787, 902549769]
