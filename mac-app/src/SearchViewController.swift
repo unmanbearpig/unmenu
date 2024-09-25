@@ -16,6 +16,7 @@
  */
 
 import Cocoa
+import ArgumentParser
 
 class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDelegate {
 
@@ -80,9 +81,10 @@ class SearchViewController: NSViewController, NSTextFieldDelegate, NSWindowDeleg
 //
         fuzzyMatcher = FuzzyMatcher.init()
 
-        let options = DmenuMac.parseOrExit()
-        if options.prompt != nil {
-            promptValue = options.prompt!
+        // Update this part
+        let command = UnmenuCommand.parseOrExit()
+        if let prompt = command.prompt {
+            promptValue = prompt
         }
 
         log("-> viewDidLoad clearing fields and resuming app normally")
