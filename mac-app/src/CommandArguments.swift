@@ -17,7 +17,14 @@
 
 import ArgumentParser
 
-struct DmenuMac: ParsableArguments {
+struct UnmenuCommand: ParsableCommand {
+    static var configuration = CommandConfiguration(
+        commandName: "unmenu",
+        abstract: "A quick launcher for macOS"
+    )
+
     @Option(name: .shortAndLong, help: "Show a prompt instead of the search input.")
     var prompt: String?
+
+    // We don't need a run() method if we're just parsing arguments
 }
