@@ -11,6 +11,14 @@ This repository is a fork of dmenu-mac (https://github.com/oNaiPs/dmenu-mac), en
 
 - Introduced a configuration file located at ~/.config/unmenu/config, enabling users to customize search directories, filter out applications and integrate scripts and aliases
 
+# Installation
+
+If you use the [Homebrew](https://brew.sh/) package manager on macOS, you can easily install unmenu:
+
+```sh
+brew install unmenu
+```
+
 # Building
 
 ```sh
