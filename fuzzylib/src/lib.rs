@@ -1,5 +1,5 @@
 use std::path::{Path, PathBuf};
-use std::fs::DirEntry;
+use std::fs::{DirEntry, Metadata, FileType};
 use std::os::unix::fs::PermissionsExt;
 use serde_derive::{Serialize, Deserialize};
 
@@ -282,15 +282,11 @@ pub struct Matcher {
     ignore_patterns: Vec<regex::Regex>,
 }
 
-fn is_executable(entry: &DirEntry) -> bool {
-    entry.metadata().expect("can't get metadata")
-        .permissions().mode() & 0o111 != 0 &&
-        entry.file_type().unwrap().is_file()
+fn is_executable(file_type: &FileType, metadata: &Metadata) -> bool {
+    metadata.permissions().mode() & 0o111 != 0 && file_type.is_file()
 }
 
-fn is_mac_app(entry: &DirEntry) -> bool {
-    let file_path = entry.path();
-
+fn is_mac_app(file_path: &Path) -> bool {
     if let Some(file_name) = file_path.file_name() {
         if let Some(name) = file_name.to_str() {
             if name.ends_with(".app") {
@@ -377,8 +373,10 @@ impl Matcher {
         false
     }
 
-    fn scan_dir(&mut self, dir: &Path) {
-        eprintln!("reading directory {dir:?}");
+    fn scan_dir(&mut self, orig_dir: &Path) {
+        eprintln!("reading directory {orig_dir:?}");
+        let dir = &orig_dir.canonicalize().expect("Couldn't canonicalize dir path {orig_dir:?}");
+
         let dir_items = std::fs::read_dir(dir);
         if let Err(err) = dir_items {
             eprintln!("Could not read dir {dir:?}: {err:?}");
@@ -392,25 +390,40 @@ impl Matcher {
             }
             let entry = entry.unwrap();
 
-            if is_executable(&entry) {
-                eprintln!("found executable #{entry:?}");
 
+            let path = entry.path().canonicalize();
+            if let Err(err) = path {
+                eprintln!("Could not resolve symlink for {entry:?}: {err:?}");
+                continue;
+            }
+            let path = path.unwrap();
+
+            let metadata = path.metadata();
+            if let Err(err) = metadata {
+                eprintln!("Could not get metadata for {path:?}: {err:?}");
+                continue;
+            }
+            let metadata = metadata.unwrap();
+
+            let file_type = metadata.file_type();
+
+            if is_executable(&file_type, &metadata) {
                 if self.config.find_executables && !self.entry_filtered_out(&entry) {
                     let name = get_executable_name(&entry);
                     self.items.push(Item {
                         name: name.clone(),
                         cname: CString::new(name).unwrap(),
-                        path: entry.path(),
+                        path: path,
                         app_type: AppType::Executable,
                     });
                 }
-            } else if is_mac_app(&entry) {
+            } else if is_mac_app(&path) {
                 if self.config.find_apps && !self.entry_filtered_out(&entry) {
                     let name = get_executable_name(&entry);
                     self.items.push(Item {
                         name: name.clone(),
                         cname: CString::new(name).unwrap(),
-                        path: entry.path(),
+                        path: path,
                         app_type: AppType::MacApp,
                     });
                 }
