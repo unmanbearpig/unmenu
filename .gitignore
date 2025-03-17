@@ -9,3 +9,4 @@
 /fuzzylib/target
 .DS_Store
 /mac-app/.DS_Store
+build/*
