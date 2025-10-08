@@ -2,6 +2,8 @@
 
 This repository is a fork of dmenu-mac (https://github.com/oNaiPs/dmenu-mac), enhancing its functionality and addressing certain issues.
 
+Update: as of 2025-10-08 I'm still using it and it works perfectly for me, even though there might be half implemented features. Turns out I need just the basic stuff and I can't be bothered to clean it up.
+
 ### Changes and New Features
 
 - Fixed a longstanding issue https://github.com/oNaiPs/dmenu-mac/issues/41
