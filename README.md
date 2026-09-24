@@ -1,8 +1,11 @@
 # unmenu
 
-This repository is a fork of dmenu-mac (https://github.com/oNaiPs/dmenu-mac), enhancing its functionality and addressing certain issues.
+A macOS launcher forked from [dmenu-mac](https://github.com/oNaiPs/dmenu-mac),
+with Rust-backed fuzzy matching, Accessibility API hotkeys, configurable search
+paths, scripts and aliases.
 
-Update: as of 2025-10-08 I'm still using it and it works perfectly for me, even though there might be half implemented features. Turns out I need just the basic stuff and I can't be bothered to clean it up.
+As of October 8, 2025, I was using the basic launcher for my own work.
+Some features may be partially implemented.
 
 ### Changes and New Features
 
